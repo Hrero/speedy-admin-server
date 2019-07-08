@@ -1,0 +1,26 @@
+[2019-06-29T13:50:41.846] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/userUpdate
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"nickName":""}
+response time: 9
+response status: 200
+response body: 
+{"code":9,"data":"","msg":"'$set' is empty. You must specify a field like so: {$set: {<field>: ...}}"}
+*************** response log end ***************
+
+[2019-06-29T13:50:57.761] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0616pbr901C7Py1nrKt90p0or906pbr9","grant_type":"authorization_code"}
+response time: 106
+response status: 200
+response body: 
+{"session_key":"OVWPxvND8EOKoVSqjnNk8g==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

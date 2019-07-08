@@ -1,0 +1,26 @@
+[2019-06-26T09:34:27.443] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/getHomeList
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-06-26T09:34:27.606] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"xkE1gnGxlumHF2+ib9wGlA==","encryptedData":"LNWtxLWtjFIdu+9NX4YV0G47pJz+dAgZpihTsGYngFm0FCvPnMlDEQsrHSJLtydbYaOT88+MCtSz8lETlGZcV9IDTyzWmsM287YyX4/NdbUh5EN95bot4u0dV5v9cr73j4LZZ+g+0/52BcZ7T/df9cAOiRiJOCuPoXTztkAPI8LF6sQk7OV/cmIPKO9kQBenzhaqqVKl9qFXeLPG7GIN7iwVBaHhSFh1BW190vYOn7Urdd8UdktjCrII3B4M5YVsmEzfkD+yoHUeGPzqEfDKHRF31j1Eqvy/zjClVANlBS4I6XX2CD+LeTel793mcSBVPOdAxL+ZJ0Zo+YQLLwlAS+uYW1rMEMzxB2CDLCNI11k6wKx1kLAY70XbN1fmMrGIbLNlVGZBJo51nnJtMJ9jeJv7VHq6Fss19cliHdY1DrZGvErFaODZQSwJe70kZdg2m8A5FS9WxOo08YYzrN15qQ==","iv":"/Jg4qSURdouUEu5KFmYEnA=="}
+response time: 1
+response status: 200
+response body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","nickName":"A sunny","gender":1,"language":"zh_CN","city":"","province":"Ras Al Khaimah","country":"AE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","watermark":{"timestamp":1561512867,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

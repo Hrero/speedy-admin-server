@@ -1,0 +1,39 @@
+[2019-07-03T22:40:09.753] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserCommodityList
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+
+[2019-07-03T22:40:09.809] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCollectionList
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+
+[2019-07-03T22:40:09.809] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+

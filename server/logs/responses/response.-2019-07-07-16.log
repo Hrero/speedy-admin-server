@@ -1,0 +1,26 @@
+[2019-07-07T16:23:09.724] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"pageSize":5,"pageNum":1,"keyword":"112了21"}
+response time: 14
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+
+[2019-07-07T16:23:09.725] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserList
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"keyword":"112了21"}
+response time: 11
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":13},"msg":"success"}
+*************** response log end ***************
+

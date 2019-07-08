@@ -1,0 +1,39 @@
+[2019-07-02T22:35:56.114] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/deleteUserSearch
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"n":4,"nModified":1,"ok":1},"msg":"删除成功"}
+*************** response log end ***************
+
+[2019-07-02T22:36:02.602] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"keyword":"118"}
+response time: 10
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":15},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-02T22:36:12.154] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"keyword":"118"}
+response time: 11
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":15},"msg":"success"}
+*************** response log end ***************
+

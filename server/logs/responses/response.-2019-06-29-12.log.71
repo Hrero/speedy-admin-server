@@ -1,0 +1,26 @@
+[2019-06-29T12:46:29.489] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/userUpdate
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"sex":"1"}
+response time: 1
+response status: 200
+response body: 
+{"code":1,"data":{"n":1,"nModified":0,"ok":1,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4MzU2NywiZXhwIjoxNTYzMDc5NTY3fQ.ectZTWLv9JT2oKrn7BnJJgSs9ZdDzDVDhILX3Tck4lw"},"msg":"已更新"}
+*************** response log end ***************
+
+[2019-06-29T12:46:35.546] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/userUpdate
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"sex":"0"}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"n":1,"nModified":1,"ok":1,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4MzU2NywiZXhwIjoxNTYzMDc5NTY3fQ.ectZTWLv9JT2oKrn7BnJJgSs9ZdDzDVDhILX3Tck4lw"},"msg":"已更新"}
+*************** response log end ***************
+

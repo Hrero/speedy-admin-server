@@ -1,0 +1,26 @@
+[2019-07-02T21:07:08.480] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 12
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"date":"112","count":2},{"date":"11","count":1},{"date":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-02T21:07:08.609] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"pageSize":2,"pageNum":1}
+response time: 142
+response status: 200
+response body: 
+{"code":1,"data":{"data":[{"collect":0,"transmit":1,"like":2,"ourRatings":6,"status":0,"creatTime":1561813165180,"updataTime":1561813165180,"_id":"5d17639bb04a2029fb76ab66","productDes":"111","imageUrl":"[\"https://static2.zugeliang01.com/20190629/765b40d0-9a6f-11e9-aeaa-7964b9e6c3b9.png\"]","phoneNumber":18618494521,"school":"清华大学","userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":3,"fansNum":2,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjA3MjY2NCwiZXhwIjoxNTYzMzY4NjY0fQ.mnuG3o2A_gXfnP7Iziv6O9DnW5UChxPgOPOuft-VLwM","birthday":"2016-04-29","signature":"大家好，才是真的好！","school":"","studentNumber":1873618763,"phoneNumber":18618494521,"name":"郝增润"},"__v":0,"type":6},{"collect":0,"transmit":0,"like":0,"ourRatings":1,"status":0,"creatTime":1561813165180,"updataTime":1561813165180,"_id":"5d176424b04a2029fb76ab67","productDes":"1111","imageUrl":"[\"https://static2.zugeliang01.com/20190629/c6572cc0-9a6f-11e9-bfe3-59f94a77db46.png\"]","phoneNumber":18618494521,"school":"清华大学","userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":3,"fansNum":2,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjA3MjY2NCwiZXhwIjoxNTYzMzY4NjY0fQ.mnuG3o2A_gXfnP7Iziv6O9DnW5UChxPgOPOuft-VLwM","birthday":"2016-04-29","signature":"大家好，才是真的好！","school":"","studentNumber":1873618763,"phoneNumber":18618494521,"name":"郝增润"},"__v":0,"type":4}],"total":11},"msg":"success"}
+*************** response log end ***************
+

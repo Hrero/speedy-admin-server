@@ -1,0 +1,26 @@
+[2019-07-02T21:39:35.384] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 17
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"date":"112","count":2},{"date":"11","count":1},{"date":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-02T21:40:02.447] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"061xKHqh2tnn5C00zPrh2TqJqh2xKHq-","grant_type":"authorization_code"}
+response time: 99
+response status: 200
+response body: 
+{"session_key":"g9/7Nhbo9BuOWTKZ9rqC1w==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

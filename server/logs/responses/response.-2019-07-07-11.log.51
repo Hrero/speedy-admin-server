@@ -1,0 +1,39 @@
+[2019-07-07T11:12:04.209] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"commodityId":"5d1f19a0fe0039ceabee3908"}
+response time: 18
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已点赞"}
+*************** response log end ***************
+
+[2019-07-07T11:12:05.687] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"commodityId":"5d1f19a0fe0039ceabee3908"}
+response time: 12
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"取消点赞"}
+*************** response log end ***************
+
+[2019-07-07T11:12:07.039] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"commodityId":"5d1f19a0fe0039ceabee3908"}
+response time: 14
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已点赞"}
+*************** response log end ***************
+

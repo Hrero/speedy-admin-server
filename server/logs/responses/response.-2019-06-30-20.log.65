@@ -1,0 +1,26 @@
+[2019-06-30T20:35:24.859] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+
+[2019-06-30T20:35:28.547] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"HS7NMVgRvfnPYzCtKCL7Vw==","encryptedData":"be0IKeYJniHceGaHVFhb9L5gT7AgttKayFiqErB2TP0n+4TGKISw2kffagg6nBHU9pWSqdqHFaBbch6WUQJbgQD/7EcHv2QBwkCEsG6RnkDW2t2JRYWxdQHKTOkDLpTgmoGNPrDTAdKL+Z3xUUO6YAFuR/6j6x4ecnApZ+mdUJtD5/Dj5WxYfuzbbZv9NUm6N6dcxEwGFNXopX4njN4glQ4XOWj4aE9CmI5g6Au/GePWDotXMS3VMsjQyu2/dxKZx1n/t8r3oU3cyMYiRnaLi7g3oReiD/FOB8HjfVi4O/1CQDKR1V+Zy5Bl2kQQlRJh5jr/W2hQq+ggzSQUbyXPMxyfFymLJ3on2aJ7PoDZIRONa4jeLv0QDuv0PETGa02cBP/g7O8qf7mmCJeou1FiXqxkEQ/15ty5RJw2/2CL2TD6i9YRYIr5k5yxtBrSN8eodjArFxhQdpeM4izpmt6TmA==","iv":"zRe4ixXdBqrj0ZMlHS+wAQ=="}
+response time: 0
+response status: 200
+response body: 
+{"openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","gender":2,"language":"zh_CN","city":"","province":"","country":"爱沙尼亚","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","watermark":{"timestamp":1561898128,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

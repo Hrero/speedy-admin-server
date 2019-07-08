@@ -1,0 +1,39 @@
+[2019-07-07T11:13:03.625] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"commodityId":"5d1f19a0fe0039ceabee3908"}
+response time: 17
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"取消点赞"}
+*************** response log end ***************
+
+[2019-07-07T11:13:04.831] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"commodityId":"5d1f19a0fe0039ceabee3908"}
+response time: 9
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已点赞"}
+*************** response log end ***************
+
+[2019-07-07T11:53:20.254] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"071aOepo10h4zj0IcCpo144Epo1aOepd","grant_type":"authorization_code"}
+response time: 104
+response status: 200
+response body: 
+{"session_key":"nLkfW6BqAFN66itUV4XTrw==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

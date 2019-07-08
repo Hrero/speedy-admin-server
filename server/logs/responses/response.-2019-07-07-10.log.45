@@ -1,0 +1,39 @@
+[2019-07-07T10:47:35.236] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserList
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"keyword":"来了"}
+response time: 12
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":13},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-07T10:47:39.536] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"pageSize":5,"pageNum":1,"keyword":"110"}
+response time: 18
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":19},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-07T10:47:39.547] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserList
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"keyword":"110"}
+response time: 10
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":13},"msg":"success"}
+*************** response log end ***************
+

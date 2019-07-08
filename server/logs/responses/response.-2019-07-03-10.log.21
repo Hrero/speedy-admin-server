@@ -1,0 +1,26 @@
+[2019-07-03T10:42:04.785] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+response time: 3
+response status: 200
+response body: 
+{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjEyMTcyNCwiZXhwIjoxNTYzNDE3NzI0fQ.I2lsp9mq1kLk4Rjm0BxCHaJmNTJ7CoZbDRKTD7TBAbk","userId":"5d145ee6c50c3201d17dc28a"},"msg":"该用户已存在"}
+*************** response log end ***************
+
+[2019-07-03T10:42:05.448] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"text":"112","count":2},{"text":"11","count":1},{"text":"112ads","count":1},{"text":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+

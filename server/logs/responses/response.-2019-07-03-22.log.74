@@ -1,0 +1,13 @@
+[2019-07-03T22:40:41.149] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"PMRxZn3ZO815hJVdU3LVIw==","encryptedData":"c03dse6u+m18aYjFsJRyWFE61RfxhBzzT7aNtNVphwJ9ol2wkpEFFvGpzGID2VPM4iAlOK0eQLqNAK7K1vx34u9Zwhm6JgHPUgyxpTl2lnHdNwoGJTRJ9HpyW/D3YS9yhomMS5J4fjJRlPv5HXh2o7OBx7o3Yz2vQmLUU5ZAB47BSOLvel46YLC89F0Vk3IUjJ0OJ/JORcD662xMpgzqG/GHt6DmdFPa/g2So2HPhE9v5TZ+Jt7cxMMtOnEUbD1ukbl2DIQKfQplFRZeBNEu0B1v7g304EzSD78Uahuz1IW9f+ZAaohDNrBmP9Z8qFj1ovsyKv6gBvQ2NAioQCspKz063hhB3riRtAvCNu7w2H4EkYvQ6DgSYaz/8ohNBo6AP3BwRJFC+In8pTP4nFw/ASg4Zw1QbmEpZDFtCpl3DXO56cF+D0JItxYdLKH5oIQjIvUmYhUGB1XaK4WGE1dhDg==","iv":"vl9tT2uMrp4nhB0e+KhrcQ=="}
+response time: 1
+response status: 200
+response body: 
+{"openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","gender":2,"language":"zh_CN","city":"","province":"","country":"爱沙尼亚","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","watermark":{"timestamp":1562164841,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

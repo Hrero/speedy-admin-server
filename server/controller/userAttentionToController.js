@@ -1,0 +1,125 @@
+const UserAttentionTo = require('../model/userAttentionTo');
+const User = require('../model/user');
+const ApiError = require('../error/ApiError');
+const ApiErrorNames = require('../error/ApiErrorNames');
+const Utils = require('../function/utils');
+
+class userAttentionToController {
+    static async addAttention(ctx, next) {
+        // let data = {
+        //     attentionId: '5d048a835e4e3ae2b1c558c1'
+        // }
+        let req = ctx.request.body;
+        try {
+            for (const key in req) {
+                if (req[key] === undefined || req[key] === "") {
+                    throw new ApiError(ApiErrorNames.UserSomeNull)
+                }
+            }
+            let data = await UserAttentionTo.findOne({
+                attentionId: req.attentionId,
+                fansId: ctx.state.userId
+            })
+            if (data) {
+                if (data.status) {
+                    let res = await UserAttentionTo.update({ _id : data._id }, { status: 0 })
+                    if (res) {
+                        ctx.body = {
+                            code: 0,
+                            data: {},
+                            msg: '取消关注'
+                        }
+                        await Utils.getIsString('isFans', ctx.state.userId, User, req.attentionId, false);
+                    }
+                } else {
+                    let res = await UserAttentionTo.update({ _id : data._id }, { status: 1 })
+                    if (res) {
+                        ctx.body = {
+                            code: 1,
+                            data: {},
+                            msg: '已关注'
+                        }
+                        await Utils.getIsString('isFans', ctx.state.userId, User, req.attentionId, true);
+                    }
+                }
+            } else {
+                let userAttentionTo = await new UserAttentionTo({
+                    attentionId: req.attentionId,
+                    fansId: ctx.state.userId,
+                    status: 1
+                }).save()
+                await Utils.getIsString('isFans', ctx.state.userId, User, req.attentionId, true);
+                if (userAttentionTo) {
+                    ctx.body = {
+                        code: 1,
+                        data: req,
+                        msg: '已关注'
+                    }
+                }
+            }
+            let attentionLength = await UserAttentionTo.find({ // 当前id的粉丝数量
+                attentionId: req.attentionId,
+                status: 1
+            })
+            let fansIdLength = await UserAttentionTo.find({ // 当前id的关注数量
+                fansId: ctx.state.userId,
+                status: 1
+            })
+            await User.update({_id: ctx.state.userId}, { attentionNum: fansIdLength.length })
+            await User.update({_id: req.attentionId}, { fansNum: attentionLength.length })
+            // return;
+            // await next()
+        } catch(err) {
+            ctx.body = {
+                code: err.code,
+                data: {},
+                msg: err.errmsg
+            }
+        }
+    }
+    static async userAttentionList(ctx, next) {
+        let req = ctx.request.body;
+        try {
+            let fans = await UserAttentionTo.find({
+                attentionId: ctx.state.userId
+            })
+            let fansListId = [] // 粉丝列表
+            fans.forEach(res => {
+                fansListId.push(res.fansId)
+            })
+
+            let my = await UserAttentionTo.find({
+                attentionId: ctx.state.userId
+            })
+            let attentionListId = [] // 我的关注
+            my.forEach(res => {
+                attentionListId.push(res.attentionId)
+            })
+            let fanslist = []
+            for (var i=0;i<fansListId.length;i++) {
+                let db = await User.findOne({_id: fansListId[i]})
+                fanslist.push(db)
+            }
+            let attentionList = []
+            for (var i=0;i<attentionListId.length;i++) {
+                let db = await User.findOne({_id: attentionListId[i]})
+                attentionList.push(db)
+            }
+            ctx.body = {
+                code: 1,
+                data: {
+                    attentionList,
+                    fanslist
+                },
+                msg: 'success'
+            }
+        } catch(err) {
+            ctx.body = {
+                code: err.code,
+                data: {},
+                msg: err.errmsg
+            }
+        }
+    }
+}
+module.exports = userAttentionToController

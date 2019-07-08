@@ -1,0 +1,39 @@
+[2019-06-26T09:34:31.496] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"platform":"weChat"}
+response time: 0
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+
+[2019-06-26T09:34:59.270] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0812ksX12RcL1X0mPLW12G1eX122ksXs","grant_type":"authorization_code"}
+response time: 114
+response status: 200
+response body: 
+{"session_key":"xkE1gnGxlumHF2+ib9wGlA==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+
+[2019-06-26T09:34:59.577] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"xkE1gnGxlumHF2+ib9wGlA==","encryptedData":"8pe7uoJb2GW7q2ewJQLVxZZpJPFGXdzsHOCEcUuv/bwbxVBpkgKOKSz0rq0Kwz89r5OVoB9I4Ccj0/oJX6MZWlnh2bFcMV/W+f82NkVVD/BR2N/HVZvh3/AKSUGYgiLiJJ95bd9Cn2V+9Xfqj0ADgVTaePXoM2AuQUpg1dT9BOWQabMVt3ibnAX4zk4HTn9bzFxJeKgdCwtGgjV85oKcb6KM4OAA4/6TGo7VlVQOaqO8+iSSz+FfxczjI5aLn3OXKYBj9jp917BsPXNudZBJMRoXXTJXdobe8MDgW4ZcKYTMJm9lAQrK5r4/GuvX75sg4dXnZIAV/BuTjUqjseyxD9gG7ZCxwsENgA7pzjQxKV0hohsl4KVXuQOsIV0nHMh4Jmwtsi9Od0qTNdxHyUYBWCqAw8prE29PRXVTeopOZISvj/sJPl9Fb3yvlmFJ4/JxjlyIxvaCSxvU5Zm1E5AGWg==","iv":"XfKdcAeJkS2BPmR7Q/z9DA=="}
+response time: 0
+response status: 200
+response body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","nickName":"A sunny","gender":1,"language":"zh_CN","city":"","province":"Ras Al Khaimah","country":"AE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","watermark":{"timestamp":1561512899,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

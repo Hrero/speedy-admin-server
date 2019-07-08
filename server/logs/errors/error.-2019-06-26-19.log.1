@@ -1,0 +1,27 @@
+[2019-06-26T19:51:48.895] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"001q08ss022Ekf1v3rps0bH2ss0q08s9","grant_type":"authorization_code"}
+response time: 2
+err name: ReferenceError
+err message: req is not defined
+err stack: ReferenceError: req is not defined
+    at auth (/Users/app/code/speedy-admin-server/server/function/token.js:23:29)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:346:16
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:351:31)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at app.use (/Users/app/code/speedy-admin-server/app.js:31:13)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at serve (/Users/app/code/speedy-admin-server/node_modules/_koa-static@5.0.0@koa-static/index.js:53:15)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-body@4.1.0@koa-body/index.js:141:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+*************** error log end ***************
+

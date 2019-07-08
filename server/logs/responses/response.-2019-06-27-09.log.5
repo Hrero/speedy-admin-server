@@ -1,0 +1,39 @@
+[2019-06-27T09:55:16.740] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/getHomeList
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-06-27T09:55:32.178] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"011B277e1LL0cy0x6Z6e1MHT6e1B277G","grant_type":"authorization_code"}
+response time: 111
+response status: 200
+response body: 
+{"session_key":"yb/3o53fLrPCvgEQj1PDQA==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+
+[2019-06-27T09:55:32.444] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+response time: 19
+response status: 200
+response body: 
+{"code":1,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQyMjE0MTFlMWIzNzJjMmY5YzRjZiIsImlhdCI6MTU2MTYwMDUzMiwiZXhwIjoxNTYyODk2NTMyfQ.AIxK9dhhgKiCmQ1p8S9j186HufhXFtLXpkHmF8TgCGY","$__":{"strictMode":true,"inserting":true,"getters":{},"_id":"5d14221411e1b372c2f9c4cf","wasPopulated":false,"activePaths":{"paths":{"openId":"require"},"states":{"ignore":{},"default":{},"init":{},"modify":{},"require":{"openId":true}},"stateNames":["require","modify","init","default","ignore"]},"pathsToScopes":{},"cachedRequired":{},"session":null,"$setCalled":{},"emitter":{"_events":{},"_eventsCount":0,"_maxListeners":0},"$options":{},"$versionError":{"message":"No matching document found for id \"5d14221411e1b372c2f9c4cf\" version 0 modifiedPaths \"openId\"","name":"VersionError","version":0,"modifiedPaths":["openId"]}},"isNew":false,"_doc":{"attentionNum":0,"fansNum":0,"creatTime":1561600496639,"updataTime":1561600496639,"_id":"5d14221411e1b372c2f9c4cf","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0},"$locals":{}},"msg":"绑定成功"}
+*************** response log end ***************
+

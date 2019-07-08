@@ -1,0 +1,13 @@
+[2019-07-07T17:53:17.818] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{}
+response time: 22
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[{"times":1,"status":1,"creatTime":1562039206641,"updataTime":1562039206641,"_id":"5d1ad55bfafd36ba0d3c2c08","search":"112","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562487342832,"updataTime":1562487342832,"_id":"5d21aa77cb6919f2ab0a2a7e","search":"1102","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562493033021,"updataTime":1562493033021,"_id":"5d21c07c36354df73deb1538","search":"收藏","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562493098627,"updataTime":1562493098627,"_id":"5d21c0bdbcdee8f75f903fde","search":"大哥来了啊","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562493156048,"updataTime":1562493156048,"_id":"5d21c0eede8472f79c7d5ec9","search":"1102111","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0}],"searchArrayList":[{"text":"112","count":2},{"text":"112ads","count":1},{"text":"1102","count":1},{"text":"1102111","count":1},{"text":"11","count":1},{"text":"1121","count":1},{"text":"1122","count":1},{"text":"11222","count":1},{"text":"112444","count":1},{"text":"1124441","count":1},{"text":"1125","count":1},{"text":"11253","count":1},{"text":"112534","count":1},{"text":"110","count":1},{"text":"112了","count":1},{"text":"112了2","count":1},{"text":"112了21","count":1},{"text":"112了213","count":1},{"text":"115","count":1},{"text":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+

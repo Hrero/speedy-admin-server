@@ -1,0 +1,13 @@
+[2019-07-02T17:51:33.299] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/recommendToCommodity
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"type":"2"}
+response time: 1
+response status: 200
+response body: 
+{"code":1,"data":[],"msg":"success"}
+*************** response log end ***************
+

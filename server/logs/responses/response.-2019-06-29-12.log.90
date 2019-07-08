@@ -1,0 +1,26 @@
+[2019-06-29T12:41:38.839] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"attentionNum":2,"fansNum":0,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4MzI5MSwiZXhwIjoxNTYzMDc5MjkxfQ.-ey0ELBO5y_Dz3QT_3HipRlVEg23_D1I5KgK1LvTGSo","birthday":"2012年02月20日","sex":1,"signature":"我来了，大家好"},"msg":"success"}
+*************** response log end ***************
+
+[2019-06-29T12:41:42.420] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021TAYiO0zn3H42EgKiO0pz6jO0TAYi7","grant_type":"authorization_code"}
+response time: 89
+response status: 200
+response body: 
+{"session_key":"NNMUPwWV1dr34zxUwzvVOQ==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

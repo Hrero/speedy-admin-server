@@ -1,0 +1,26 @@
+[2019-06-29T13:08:10.159] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/userUpdate
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"school":"北京大学"}
+response time: 6
+response status: 200
+response body: 
+{"code":1,"data":{"n":1,"nModified":1,"ok":1,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4NDg4NCwiZXhwIjoxNTYzMDgwODg0fQ.tJ5SFyM2H2BgvRkQYpWANqocpMykGf8B4vr6R8nO6SM"},"msg":"已更新"}
+*************** response log end ***************
+
+[2019-06-29T13:08:10.205] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"attentionNum":2,"fansNum":0,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4NDg4NCwiZXhwIjoxNTYzMDgwODg0fQ.tJ5SFyM2H2BgvRkQYpWANqocpMykGf8B4vr6R8nO6SM","birthday":"2019-04-29","sex":0,"signature":"我来了，大家好","school":"北京大学"},"msg":"success"}
+*************** response log end ***************
+

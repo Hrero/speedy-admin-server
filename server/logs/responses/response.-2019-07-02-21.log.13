@@ -1,0 +1,39 @@
+[2019-07-02T21:57:18.795] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"date":"112","count":2},{"date":"11","count":1},{"date":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-02T21:57:32.294] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"date":"112","count":2},{"date":"11","count":1},{"date":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-02T21:57:47.092] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"userHistorySearch":[],"searchArrayList":[{"date":"112","count":2},{"date":"11","count":1},{"date":"118","count":1}]},"msg":"success"}
+*************** response log end ***************
+

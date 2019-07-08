@@ -1,0 +1,26 @@
+[2019-06-30T20:35:28.569] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/pcmall/user/authInfo
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"platform":"weChat","openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132"}
+response time: 1
+response status: 200
+response body: 
+{"code":1,"data":{"platform":"weChat","openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","token":"[object Object]"},"msg":"已更新"}
+*************** response log end ***************
+
+[2019-06-30T20:35:34.591] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"HS7NMVgRvfnPYzCtKCL7Vw==","encryptedData":"5KNAK36qbRYJaNCBgAZIOplP172M7ryFoDsCWmkROA1I4Aa0/+SDbqeLPv3Ejj+Kt7D7+D0jGROpJAYapuSd+QPQEmkrgGIkzBb4FKJSpDufhfuaw5RJduZrGBziyBS9b9qYTkAnvMrr2NOj2dQvr25e8eqEKnzgGCJ5Ee9vLLDQ7Ae/VX+xajDnmJViKdWaLOpbkpp26dmlsw8pgFX/xT42uD4FQKI0rVt0iV2068XaplIV19CxOoo3au0oEZevub4U0jURNk7ArHR5a/S675MPnTdrjEnxSwgCerFYLidKORG34ymyavTjHCnpBceA0/zIbqGycHRU6CS0R8ba6MsuiNp58jqwc9HxBXG/wcHLgvYjYo6UfnakXpz6J5FQbCiKuj6Foc/1cnGeHirZ6H13QPjtGQHumbV590vA2AnldqGir5Jmin6bbenb9zc9tqvjLJpQ/7lMaXP3RncaHQ==","iv":"+QXRgisPCMGY84s1qUB/Yw=="}
+response time: 0
+response status: 200
+response body: 
+{"openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","gender":2,"language":"zh_CN","city":"","province":"","country":"爱沙尼亚","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","watermark":{"timestamp":1561898134,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

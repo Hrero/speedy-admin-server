@@ -1,0 +1,13 @@
+[2019-06-29T17:18:18.839] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"imageUrl":"[\"https://static2.zugeliang01.com/20190629/d33e68c0-9a4e-11e9-bfe3-59f94a77db46.png\",\"https://static2.zugeliang01.com/20190629/d33fa140-9a4e-11e9-aeaa-7964b9e6c3b9.png\"]","productDes":"zxi'cu主席处于","phoneNumber":18618494521,"school":"复旦大学"}
+response time: 7
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"status":0,"creatTime":1561799412247,"updataTime":1561799412247,"_id":"5d172cda8492c706354aaa0c","productDes":"zxi'cu主席处于","imageUrl":"[\"https://static2.zugeliang01.com/20190629/d33e68c0-9a4e-11e9-bfe3-59f94a77db46.png\",\"https://static2.zugeliang01.com/20190629/d33fa140-9a4e-11e9-aeaa-7964b9e6c3b9.png\"]","phoneNumber":18618494521,"school":"复旦大学","userId":"5d145ee6c50c3201d17dc28a","__v":0},"msg":"success"}
+*************** response log end ***************
+

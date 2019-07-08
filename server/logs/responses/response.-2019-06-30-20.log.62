@@ -1,0 +1,26 @@
+[2019-06-30T20:35:39.531] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/pcmall/user/authInfo
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"platform":"weChat","openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132"}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":{"platform":"weChat","openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","nickName":"@小月","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","token":"[object Object]"},"msg":"已更新"}
+*************** response log end ***************
+
+[2019-06-30T20:35:41.551] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+

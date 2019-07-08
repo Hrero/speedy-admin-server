@@ -1,0 +1,13 @@
+[2019-06-30T20:40:52.959] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"imageUrl":"[\"https://static2.zugeliang01.com/20190630/3db11190-9b34-11e9-aeaa-7964b9e6c3b9.jpg\",\"https://static2.zugeliang01.com/20190630/3dac2f90-9b34-11e9-bfe3-59f94a77db46.jpg\"]","productDes":"啦啦哈哈","phoneNumber":18457173986,"school":"清华大学"}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"status":0,"creatTime":1561882114242,"updataTime":1561882114242,"_id":"5d18add4e0c5a535fa2e3ad0","productDes":"啦啦哈哈","imageUrl":"[\"https://static2.zugeliang01.com/20190630/3db11190-9b34-11e9-aeaa-7964b9e6c3b9.jpg\",\"https://static2.zugeliang01.com/20190630/3dac2f90-9b34-11e9-bfe3-59f94a77db46.jpg\"]","phoneNumber":18457173986,"school":"清华大学","userId":"5d18ac62e0c5a535fa2e3acf","dep":"5d18ac62e0c5a535fa2e3acf","__v":0},"msg":"success"}
+*************** response log end ***************
+

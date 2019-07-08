@@ -1,0 +1,25 @@
+[2019-06-29T20:05:59.541] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserList
+request client ip:  ::1
+request body: 
+{"pageSize":2,"pageNum":1,"phoneNumber":""}
+response time: 16
+response status: 200
+response body: 
+{"code":1,"data":{"data":[{"attentionNum":0,"fansNum":0,"creatTime":1561809441865,"updataTime":1561809441865,"_id":"5d01bc969a1dc00d3f63bbde","name":"zxcz","school":"asdasd","studentNumber":121,"phoneNumber":233,"openId":"sadad","__v":0},{"attentionNum":0,"fansNum":0,"creatTime":1560522767004,"updataTime":1560522767004,"_id":"5d03b0ee3d855d840d4cf40f","name":"客家话可","school":"1爱吃早餐","studentNumber":1231231,"phoneNumber":1231231231,"openId":"12312","__v":0}],"total":12},"msg":"success"}
+*************** response log end ***************
+
+[2019-06-29T20:05:59.933] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /favicon.ico
+request client ip:  ::1
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+

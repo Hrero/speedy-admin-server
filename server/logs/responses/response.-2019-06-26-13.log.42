@@ -1,0 +1,26 @@
+[2019-06-26T13:51:33.683] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"platform":"weChat","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","nickName":"A sunny","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132"}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NjE1MjgyOTMsImV4cCI6MTU2MjgyNDI5M30.-IhUuPiNzdqjXqKxSGwfDH4Tj3evTgalqKEYr3-Su5g"},"msg":"该用户已存在"}
+*************** response log end ***************
+
+[2019-06-26T13:51:41.859] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"001bIsBM1EjvF614BBzM1to6BM1bIsBS","grant_type":"authorization_code"}
+response time: 124
+response status: 200
+response body: 
+{"session_key":"H7RtqRacQ4ayi1UsaaxpDg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

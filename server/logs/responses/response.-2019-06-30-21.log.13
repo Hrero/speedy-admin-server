@@ -1,0 +1,26 @@
+[2019-06-30T21:29:31.345] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"attentionId":"5d18ac62e0c5a535fa2e3acf"}
+response time: 11
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已关注"}
+*************** response log end ***************
+
+[2019-06-30T21:29:42.589] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/getCommodityDetail
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"commodityId":"5d18add4e0c5a535fa2e3ad0"}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"status":0,"creatTime":1561882114242,"updataTime":1561882114242,"_id":"5d18add4e0c5a535fa2e3ad0","productDes":"啦啦哈哈","imageUrl":"[\"https://static2.zugeliang01.com/20190630/3db11190-9b34-11e9-aeaa-7964b9e6c3b9.jpg\",\"https://static2.zugeliang01.com/20190630/3dac2f90-9b34-11e9-bfe3-59f94a77db46.jpg\"]","phoneNumber":18457173986,"school":"清华大学","userId":"5d18ac62e0c5a535fa2e3acf","dep":{"attentionNum":0,"fansNum":1,"creatTime":1561882114242,"updataTime":1561882114242,"_id":"5d18ac62e0c5a535fa2e3acf","openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY","__v":0,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMThhYzYyZTBjNWE1MzVmYTJlM2FjZiIsImlhdCI6MTU2MTg5ODQxNiwiZXhwIjoxNTYzMTk0NDE2fQ.VJ60fsi0buFL5KnsKVC4dTUTae64DAFniV73DlBvZoM","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er1cIfzPldahjJaNFkgjWSkfFy4jHGXWwBwvJKIeFOrkzl2hNv07OO46IbyHG7sOocb13Sp8O5ZtA/132","nickName":"@小月","birthday":"1992-09-07","studentNumber":20120501,"phoneNumber":18457173986,"name":"赵美娇","signature":"一"},"__v":0},"msg":"success"}
+*************** response log end ***************
+

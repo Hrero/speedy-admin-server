@@ -1,0 +1,13 @@
+[2019-07-04T22:46:36.802] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"pageSize":4,"pageNum":6}
+response time: 7
+response status: 200
+response body: 
+{"code":1,"data":{"data":[{"collect":0,"transmit":0,"like":0,"ourRatings":0,"isCollect":"0","isLike":"0","status":0,"creatTime":1562164755857,"updataTime":1562164755858,"_id":"5d1cbf94922fbb396f9219af","productDes":"错了","imageUrl":"[\"https://static2.zugeliang01.com/20190703/357d2440-9da1-11e9-aeaa-7964b9e6c3b9.png\"]","phoneNumber":18618494521,"school":"北京大学","type":3,"userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":3,"fansNum":2,"isFans":"5d048a415c109ee261016283,,5d048a835e4e3ae2b1c558c1,5d145ee6c50c3201d17dc28a","creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjI1MTQ4OSwiZXhwIjoxNTYzNTQ3NDg5fQ.k9dni_nE3HAf8n3L3JmBE8eLb1F14nEQ_I6iPVbtLFM","birthday":"2016-04-29","signature":"大家好，才是真的好！","school":"北京大学","studentNumber":1873618763,"phoneNumber":18618494521,"name":"郝增润"},"__v":0},{"collect":0,"transmit":0,"like":0,"ourRatings":0,"isCollect":"0","isLike":"0","status":0,"creatTime":1562166022048,"updataTime":1562166022048,"_id":"5d1cc31d1164903bc9537a76","productDes":"错了吗","imageUrl":"[\"https://static2.zugeliang01.com/20190703/53149a40-9da3-11e9-aeaa-7964b9e6c3b9.png\"]","phoneNumber":18618494521,"school":"北京大学","type":3,"userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":3,"fansNum":2,"isFans":"5d048a415c109ee261016283,,5d048a835e4e3ae2b1c558c1,5d145ee6c50c3201d17dc28a","creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjI1MTQ4OSwiZXhwIjoxNTYzNTQ3NDg5fQ.k9dni_nE3HAf8n3L3JmBE8eLb1F14nEQ_I6iPVbtLFM","birthday":"2016-04-29","signature":"大家好，才是真的好！","school":"北京大学","studentNumber":1873618763,"phoneNumber":18618494521,"name":"郝增润"},"__v":0}],"total":22},"msg":"success"}
+*************** response log end ***************
+

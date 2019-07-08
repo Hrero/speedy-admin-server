@@ -1,0 +1,39 @@
+[2019-07-05T20:43:06.774] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"type":0,"pageSize":5,"pageNum":1}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"请先登录"}
+*************** response log end ***************
+
+[2019-07-05T20:43:06.783] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"请先登录"}
+*************** response log end ***************
+
+[2019-07-05T20:43:06.789] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getEverybodySearching
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"请先登录"}
+*************** response log end ***************
+

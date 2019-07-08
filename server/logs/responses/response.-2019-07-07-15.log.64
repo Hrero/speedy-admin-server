@@ -1,0 +1,13 @@
+[2019-07-07T15:35:54.605] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.0.106
+request body: 
+{"imageUrl":"[{\"height\":200,\"width\":200,\"imgH\":\"https://static2.zugeliang01.com/20190707/d735c5e0-a089-11e9-aeaa-7964b9e6c3b9.png\"}]","productDes":"ca擦擦","phoneNumber":18618494521,"school":"北京大学","type":10,"firstImgHeight":200,"firstImgWidth":200,"imgMaxHeight":200}
+response time: 7
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"ourRatings":0,"isCollect":"","isLike":"","firstImgHeight":200,"firstImgWidth":200,"imgMaxHeight":200,"status":0,"creatTime":1562468815772,"updataTime":1562468815772,"_id":"5d21a0da012746ed72c41dbe","productDes":"ca擦擦","imageUrl":"[{\"height\":200,\"width\":200,\"imgH\":\"https://static2.zugeliang01.com/20190707/d735c5e0-a089-11e9-aeaa-7964b9e6c3b9.png\"}]","phoneNumber":18618494521,"school":"北京大学","type":10,"userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},"msg":"success"}
+*************** response log end ***************
+

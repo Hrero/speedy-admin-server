@@ -1,0 +1,26 @@
+[2019-06-29T15:34:22.631] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+response time: 3
+response status: 200
+response body: 
+{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc5MzY2MiwiZXhwIjoxNTYzMDg5NjYyfQ.kVRD5MWk3ZtJXiwFAlsRSP52TymgWpODm-osdtqrhrY","userId":"5d145ee6c50c3201d17dc28a"},"msg":"该用户已存在"}
+*************** response log end ***************
+
+[2019-06-29T15:34:22.981] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appId":"wx5aaaec189466b376","sessionKey":"kS7QnRvF+Rx6yPNiQ/KyOg==","encryptedData":"z3CoA7sWDT0SWrOSlF9+24qjS/uwSVV1WgrmZkvOuPSxhqfJicFUVzG7/LDbGuMYlA9A+gcP4zemz0g3MjaMDjJVKVSFlqF/kSZIT54w55GVDw/UrYiybddHJosXRRLOzO9yk5slco/GIJzHPNnB8aPleyAzMRcNPNa3rExZHcls55qlrmuFfLtbtupXkv5AkjJd4byxIY2fOZsBdv2JCYNfu85YOc9RVf1zjJHueWkF7hTyHIoQ3tjO1iPMoIK9SCEwJqnb9EPux88aRoMH0jZVjgV+ECPhjBjqnfnbmXCUfH0YrSlw9i5zOsyLsy00RV5yWay2+ZqTxHe28BOCWWPU0fnSXHx+czEUjurt5COsfi4tTGEu5rJAWyAwxATQqkizxgaEsnk5zU7El085vmAbRCEmNtVy7IV1TXdBQYIinijlg4B2oHmiAjFAvBJkfmmpy5IEPgQHNFnnBWizJw==","iv":"PbPjBWGEjFERN8AdtzlKSg=="}
+response time: 1
+response status: 200
+response body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","nickName":"A sunny","gender":1,"language":"zh_CN","city":"","province":"Ras Al Khaimah","country":"AE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","watermark":{"timestamp":1561793662,"appid":"wx5aaaec189466b376"}}
+*************** response log end ***************
+

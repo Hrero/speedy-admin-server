@@ -1,0 +1,26 @@
+[2019-07-03T22:42:55.949] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.0.103
+request body: 
+{"imageUrl":"[]","productDes":"啊了OK不我","phoneNumber":18618494521,"school":"北京大学","type":3}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"ourRatings":0,"status":0,"creatTime":1562164755857,"updataTime":1562164755858,"_id":"5d1cbeef922fbb396f9219ae","productDes":"啊了OK不我","imageUrl":"[]","phoneNumber":18618494521,"school":"北京大学","type":3,"userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-03T22:42:58.969] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.103
+request body: 
+{"pageSize":4,"pageNum":1,"type":3}
+response time: 9
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{}}
+*************** response log end ***************
+

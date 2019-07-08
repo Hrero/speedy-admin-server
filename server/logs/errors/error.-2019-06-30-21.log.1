@@ -1,0 +1,30 @@
+[2019-06-30T21:25:59.861] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getUnionId
+request client ip:  ::ffff:192.168.0.113
+request body: 
+{"appId":"wx5aaaec189466b376","encryptedData":"ghWHp0oXaoZH1DXqAaE5fP8wf7+fteUnm7OxVqfhPVEoj1N7Dg0Otg9aYcDXWmu5LxaG4lzU6NkZSg7DG8hzh1ksVP6SfNWWfEhJzLG95hIFlC9V5D76Z+RKIiSkr6KqZLueGkM7pTO2fq/ZNB96rQzXJKTlIX1RJGLS00M3Vk7SnEGYv78wbFu997DuaiUPY+A5wmt7TbjrNdAcWQzL2Pc0gEm2NvH7kRbGbzj6FOiBAIJYqbMuECP9msF5zb52V2UGrYv1hGT3RMaymxHq7KRuS+3nEVRIkFViGdKOLGuZfrZghDb3Rdn4T6UEUgOgItEYlWUblzQWh7mdYF1QTaUZCsjp9XE4w11OoelWjOqixymGROiaWxf547XzvOM5vW3jyw/SK11exSbbgNt9MnNxvzWZeLt0SEHBL0oBNUVKbBQKnZS0sf5QN9eM95n+RCV/nX/18uoZtGM/z5t1rA==","iv":"B3MUHXDJUZqYgGQFVhLnlA=="}
+response time: 6
+err name: TypeError [ERR_INVALID_ARG_TYPE]
+err message: The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+err stack: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+    at Function.from (buffer.js:207:11)
+    at new Buffer (buffer.js:182:17)
+    at WXBizDataCrypt.decryptData (/Users/app/code/speedy-admin-server/server/function/WXBizDataCrypt.js:10:24)
+    at getUnionId (/Users/app/code/speedy-admin-server/server/controller/weChatController.js:61:23)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:346:16
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:351:31)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at app.use (/Users/app/code/speedy-admin-server/app.js:32:13)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at serve (/Users/app/code/speedy-admin-server/node_modules/_koa-static@5.0.0@koa-static/index.js:53:15)
+    at dispatch (/Users/app/code/speedy-admin-server/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/app/code/speedy-admin-server/node_modules/_koa-body@4.1.0@koa-body/index.js:141:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+*************** error log end ***************
+

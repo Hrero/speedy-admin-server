@@ -1,0 +1,26 @@
+[2019-06-30T20:34:42.356] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0719xt8p1xOn2k0USM8p1jSs8p19xt8N","grant_type":"authorization_code"}
+response time: 88
+response status: 200
+response body: 
+{"session_key":"HS7NMVgRvfnPYzCtKCL7Vw==","openid":"onioU0b7U6Qik1N-MgHeeaS_ijTY"}
+*************** response log end ***************
+
+[2019-06-30T20:34:42.418] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"openId":"onioU0b7U6Qik1N-MgHeeaS_ijTY"}
+response time: 6
+response status: 200
+response body: 
+{"code":1,"data":{"token":{"n":1,"nModified":1,"ok":1},"userId":"5d18ac62e0c5a535fa2e3acf"},"msg":"绑定成功"}
+*************** response log end ***************
+

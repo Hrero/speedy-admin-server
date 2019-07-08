@@ -1,0 +1,13 @@
+[2019-06-29T17:19:37.141] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"imageUrl":"[\"https://static2.zugeliang01.com/20190629/0220f900-9a4f-11e9-aeaa-7964b9e6c3b9.png\",\"https://static2.zugeliang01.com/20190629/022ae410-9a4f-11e9-aeaa-7964b9e6c3b9.png\",\"https://static2.zugeliang01.com/20190629/02267740-9a4f-11e9-bfe3-59f94a77db46.png\"]","productDes":"自行车自行车","phoneNumber":18618494521,"school":"清华大学"}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"status":0,"creatTime":1561799412247,"updataTime":1561799412247,"_id":"5d172d298492c706354aaa0e","productDes":"自行车自行车","imageUrl":"[\"https://static2.zugeliang01.com/20190629/0220f900-9a4f-11e9-aeaa-7964b9e6c3b9.png\",\"https://static2.zugeliang01.com/20190629/022ae410-9a4f-11e9-aeaa-7964b9e6c3b9.png\",\"https://static2.zugeliang01.com/20190629/02267740-9a4f-11e9-bfe3-59f94a77db46.png\"]","phoneNumber":18618494521,"school":"清华大学","userId":"5d145ee6c50c3201d17dc28a","__v":0},"msg":"success"}
+*************** response log end ***************
+

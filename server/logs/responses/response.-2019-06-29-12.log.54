@@ -1,0 +1,26 @@
+[2019-06-29T12:49:05.668] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/userUpdate
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"sex":1}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"n":1,"nModified":1,"ok":1,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MTc4Mzc0MSwiZXhwIjoxNTYzMDc5NzQxfQ.wKXTbAC3lh6A2yiTS6nQ9PQBBcGQEXTA-srCj7tC_A0"},"msg":"已更新"}
+*************** response log end ***************
+
+[2019-06-29T12:49:55.549] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021gnXu12NKQBW0OGXv129GYu12gnXuQ","grant_type":"authorization_code"}
+response time: 119
+response status: 200
+response body: 
+{"session_key":"BIWwec9zpekcHlzqNk2N1Q==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

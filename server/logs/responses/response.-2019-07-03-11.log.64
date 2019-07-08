@@ -1,0 +1,39 @@
+[2019-07-03T11:39:14.295] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"keyword":"112"}
+response time: 25
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":15},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-03T11:39:24.427] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserList
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"keyword":"112"}
+response time: 12
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":14},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-03T11:39:24.431] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.246
+request body: 
+{"keyword":"112"}
+response time: 18
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":15},"msg":"success"}
+*************** response log end ***************
+
