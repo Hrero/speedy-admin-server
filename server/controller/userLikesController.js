@@ -20,8 +20,8 @@ class userLikesController {
                 userId: ctx.state.userId
             })
             if (data) {
-                if (data.status) {
-                    let res = await UserLikes.update({ _id : data._id }, { status: 0 })
+                if (!req.status) {
+                    let res = await UserLikes.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 0,
@@ -38,7 +38,7 @@ class userLikesController {
                         })
                     }
                 } else {
-                    let res = await UserLikes.update({ _id : data._id }, { status: 1 })
+                    let res = await UserLikes.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 1,

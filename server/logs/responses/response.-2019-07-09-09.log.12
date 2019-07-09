@@ -1,0 +1,39 @@
+[2019-07-09T09:58:00.445] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","status":""}
+response time: 1
+response status: 200
+response body: 
+{"code":2001,"data":{},"msg":"状态不太对！"}
+*************** response log end ***************
+
+[2019-07-09T09:58:02.838] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","status":""}
+response time: 1
+response status: 200
+response body: 
+{"code":2001,"data":{},"msg":"状态不太对！"}
+*************** response log end ***************
+
+[2019-07-09T09:58:04.850] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addLike
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","status":""}
+response time: 0
+response status: 200
+response body: 
+{"code":2001,"data":{},"msg":"状态不太对！"}
+*************** response log end ***************
+

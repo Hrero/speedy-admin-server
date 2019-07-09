@@ -1,0 +1,39 @@
+[2019-07-09T19:23:39.270] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"pageSize":5,"pageNum":2}
+response time: 5
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:23:41.422] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"pageSize":5,"pageNum":3}
+response time: 13
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:23:48.247] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0817jux22lsA9V0IdYw22hgMx227juxH","grant_type":"authorization_code"}
+response time: 87
+response status: 200
+response body: 
+{"session_key":"H5k5O4aOTsIVHajjZ1K7Gg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

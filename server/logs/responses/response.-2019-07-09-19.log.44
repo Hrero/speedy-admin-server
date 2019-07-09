@@ -1,0 +1,39 @@
+[2019-07-09T19:25:12.152] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"pageSize":5,"pageNum":2}
+response time: 5
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:25:15.883] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"pageSize":5,"pageNum":3}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:25:17.265] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"pageSize":5,"pageNum":4}
+response time: 5
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+

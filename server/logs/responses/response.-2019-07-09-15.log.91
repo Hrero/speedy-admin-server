@@ -1,0 +1,39 @@
+[2019-07-09T15:28:43.078] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"attentionId":"5d145ee6c50c3201d17dc28a","status":1}
+response time: 33
+response status: 200
+response body: 
+{"code":1,"data":{"attentionId":"5d145ee6c50c3201d17dc28a","status":1},"msg":"已关注"}
+*************** response log end ***************
+
+[2019-07-09T15:28:44.843] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"attentionId":"5d145ee6c50c3201d17dc28a","status":1}
+response time: 11
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已关注"}
+*************** response log end ***************
+
+[2019-07-09T15:30:12.607] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021eOoqd1a0Jwz0AxJpd145Hqd1eOoqi","grant_type":"authorization_code"}
+response time: 192
+response status: 200
+response body: 
+{"session_key":"fJYujSppwwC6iNlgXD64bg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

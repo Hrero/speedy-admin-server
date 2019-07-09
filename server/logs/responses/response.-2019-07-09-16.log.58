@@ -1,0 +1,39 @@
+[2019-07-09T16:40:26.204] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserCommodityList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"userId":"5d18ac62e0c5a535fa2e3acf"}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":[],"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T16:40:26.206] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCollectionList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"userId":"5d18ac62e0c5a535fa2e3acf"}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":[],"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T16:40:26.209] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"userId":"5d18ac62e0c5a535fa2e3acf"}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":null,"msg":"success"}
+*************** response log end ***************
+

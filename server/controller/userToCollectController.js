@@ -26,7 +26,8 @@ class userToCollectController {
     }
     static async addCollection(ctx, next) {
         // let data = {
-        //     commodityId: '5d145ee6c50c3201d17dc28a'
+        //     commodityId: '5d145ee6c50c3201d17dc28a'，
+        //     status: 0
         // }
         let req = ctx.request.body;
         try {
@@ -40,8 +41,8 @@ class userToCollectController {
                 userId: ctx.state.userId
             })
             if (data) {
-                if (data.status) {
-                    let res = await UserToCollect.update({ _id : data._id }, { status: 0 })
+                if (!req.status) {
+                    let res = await UserToCollect.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 0,
@@ -58,7 +59,7 @@ class userToCollectController {
                         })
                     }
                 } else {
-                    let res = await UserToCollect.update({ _id : data._id }, { status: 1 })
+                    let res = await UserToCollect.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 1,

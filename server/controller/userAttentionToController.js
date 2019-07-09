@@ -7,7 +7,8 @@ const Utils = require('../function/utils');
 class userAttentionToController {
     static async addAttention(ctx, next) {
         // let data = {
-        //     attentionId: '5d048a835e4e3ae2b1c558c1'
+        //     attentionId: '5d048a835e4e3ae2b1c558c1',
+        //     status: 0
         // }
         let req = ctx.request.body;
         try {
@@ -21,8 +22,8 @@ class userAttentionToController {
                 fansId: ctx.state.userId
             })
             if (data) {
-                if (data.status) {
-                    let res = await UserAttentionTo.update({ _id : data._id }, { status: 0 })
+                if (!req.status) {
+                    let res = await UserAttentionTo.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 0,
@@ -32,7 +33,7 @@ class userAttentionToController {
                         await Utils.getIsString('isFans', ctx.state.userId, User, req.attentionId, false);
                     }
                 } else {
-                    let res = await UserAttentionTo.update({ _id : data._id }, { status: 1 })
+                    let res = await UserAttentionTo.update({ _id : data._id }, { status: req.status })
                     if (res) {
                         ctx.body = {
                             code: 1,
@@ -81,28 +82,25 @@ class userAttentionToController {
         let req = ctx.request.body;
         try {
             let fans = await UserAttentionTo.find({
-                attentionId: ctx.state.userId
+                attentionId: ctx.state.userId,
+                status: 1
             })
             let fansListId = [] // 粉丝列表
+            let attentionListId = [] // 我的关注
             fans.forEach(res => {
                 fansListId.push(res.fansId)
-            })
-
-            let my = await UserAttentionTo.find({
-                attentionId: ctx.state.userId
-            })
-            let attentionListId = [] // 我的关注
-            my.forEach(res => {
                 attentionListId.push(res.attentionId)
             })
             let fanslist = []
             for (var i=0;i<fansListId.length;i++) {
                 let db = await User.findOne({_id: fansListId[i]})
+                db._doc.isFans = Utils.getIsStatus(db, 'isFans', ctx.state.userId);
                 fanslist.push(db)
             }
             let attentionList = []
             for (var i=0;i<attentionListId.length;i++) {
                 let db = await User.findOne({_id: attentionListId[i]})
+                db._doc.isFans = Utils.getIsStatus(db, 'isFans', ctx.state.userId);
                 attentionList.push(db)
             }
             ctx.body = {

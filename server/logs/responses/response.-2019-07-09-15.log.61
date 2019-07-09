@@ -1,0 +1,39 @@
+[2019-07-09T15:32:18.278] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"attentionId":"5d145ee6c50c3201d17dc28a","status":1}
+response time: 17
+response status: 200
+response body: 
+{"code":1,"data":{"attentionId":"5d145ee6c50c3201d17dc28a","status":1},"msg":"已关注"}
+*************** response log end ***************
+
+[2019-07-09T15:32:19.599] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"attentionId":"5d145ee6c50c3201d17dc28a","status":0}
+response time: 10
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":"取消关注"}
+*************** response log end ***************
+
+[2019-07-09T15:32:21.061] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addAttention
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"attentionId":"5d145ee6c50c3201d17dc28a","status":1}
+response time: 18
+response status: 200
+response body: 
+{"code":1,"data":{},"msg":"已关注"}
+*************** response log end ***************
+

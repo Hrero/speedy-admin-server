@@ -30,12 +30,13 @@ module.exports = {
         });
         return arr.slice(0, 20)
     },
-    getIsString: async (field, data, Schema, from, type) => { // 插入拼接删除某个表中某个字段，以调用为基准
+    getIsString: async (field, data, Schema, from, type) => { // 插入拼接删除某个表中某个字段
         /**
          * field 字段
          * data 改变的参数
          * Schema 表名
          * from 表查询的id
+         * type true插入 false删除
          * 以调用为触发
          */
         return new Promise(async (r, j) => {

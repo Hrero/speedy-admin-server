@@ -141,9 +141,9 @@ class commodityController {
             let res = await Commodity.findOne({
                 _id: req.commodityId
             }).populate('dep')
-            
             res._doc.isCollect = Utils.getIsStatus(res, 'isCollect', ctx.state.userId);
             res._doc.isLike = Utils.getIsStatus(res, 'isLike', ctx.state.userId);
+            res.dep._doc.isFans = Utils.getIsStatus(res.dep, 'isFans', ctx.state.userId);
             res._doc.imgMaxHeight = await Utils.getArrForStr(res.imgMaxHeight);
             res._doc.imageUrl = await Utils.getArrForStr(res.imageUrl);
             ctx.body = {

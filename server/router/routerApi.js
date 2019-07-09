@@ -13,7 +13,7 @@ const commodityTypeController = require('../controller/commodityTypeController')
 
 // 用户
 routerApi.post('/api/user/addUser', UserController.saveUser); // 添加用户
-routerApi.post('/api/user/getUserList', UserController.getAllUser); // 查询用户
+routerApi.post('/api/user/getUserList', token.auth, UserController.getAllUser); // 查询用户
 routerApi.post('/api/user/getUserDetail', token.auth, UserController.userDetail); // 查询用户详情
 routerApi.post('/api/user/userUpdate', token.auth, UserController.userUpdate); // 用户信息更新
 // 关注
@@ -31,7 +31,7 @@ routerApi.post('/api/user/getCommodityList', token.auth, commodityController.get
 routerApi.post('/api/editCommodityStatus', commodityController.editStatus); // 上架商品
 routerApi.post('/api/user/saveCommodity', token.auth, commodityController.saveCommodity); // 添加商品
 routerApi.post('/api/user/getUserCommodityList', token.auth, commodityController.getUserCommodityList); // 获取用户下的商品
-routerApi.post('/api/getCommodityDetail', commodityController.getCommodityDetail); // 获取商品详情
+routerApi.post('/api/getCommodityDetail', token.auth , commodityController.getCommodityDetail); // 获取商品详情
 // 推荐
 routerApi.post('/api/recommendToCommodity', commodityController.recommendToCommodity); // 推荐商品
 // 物品分类

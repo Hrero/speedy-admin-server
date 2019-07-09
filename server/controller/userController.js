@@ -1,6 +1,7 @@
 const User = require('../model/user');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
+const Utils = require('../function/utils');
 class UserController {
     static async saveUser(ctx, next) {
         let req = ctx.request.body;
@@ -74,6 +75,9 @@ class UserController {
                 }
             ]
         }).skip(skip).limit(pageSize);
+        for (let i=0; i<res.length; i++) {
+            res[i]._doc.isFans = Utils.getIsStatus(res[i], 'isFans', ctx.state.userId);
+        }
         ctx.body = {
             code: 1,
             data: {
@@ -88,6 +92,7 @@ class UserController {
         let userId = req.userId? req.userId: ctx.state.userId;
         try {
             let data = await User.findOne({_id: userId})
+            data._doc.isFans = Utils.getIsStatus(data, 'isFans', ctx.state.userId);
             ctx.body = {
                 code: 1,
                 data: data,
