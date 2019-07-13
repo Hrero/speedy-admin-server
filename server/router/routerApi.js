@@ -10,6 +10,7 @@ const userTransmitsController = require('../controller/userTransmitsController')
 const userLikesController = require('../controller/userLikesController');
 const SearchController = require('../controller/searchController');
 const commodityTypeController = require('../controller/commodityTypeController');
+const remarksController = require('../controller/remarksController');
 
 // 用户
 routerApi.post('/api/user/addUser', UserController.saveUser); // 添加用户
@@ -40,6 +41,14 @@ routerApi.post('/api/getCommodityTypeList', commodityTypeController.getCommodity
 // 搜索
 routerApi.post('/api/user/getEverybodySearching', token.auth, SearchController.getEverybodySearching); // 大家都在搜
 routerApi.post('/api/user/deleteUserSearch', token.auth, SearchController.deleteUserSearch); // 删除用户历史搜索
+// 评论
+routerApi.post('/api/user/addRemarks', token.auth, remarksController.addRemarks); // 添加评论
+routerApi.post('/api/user/getRemarksList', token.auth, remarksController.getRemarksList); // 单条评论全部列表
+// 消息
+routerApi.post('/api/user/getMessageList', token.auth, remarksController.getMessageList); // 该用户的评论消息
+routerApi.post('/api/user/updateMessage', token.auth, remarksController.updateMessage); // 更新0未读消息找机会封装一个公用的更新字段的方法
+routerApi.post('/api/user/clearMessage', token.auth, remarksController.clearMessage); // 清空未读消息
+
 
 // 微信&登录
 routerApi.post('/api/xcx/weChat/getWeChatId', weChatCtrl.getWeChatId); // 微信openid

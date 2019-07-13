@@ -1,13 +1,26 @@
-[2019-07-09T19:19:05.223] [INFO] resLogger - 
+[2019-07-09T19:42:03.303] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/getCommodityTypeList
+request originalUrl:  /api/xcx/weChat/getWeChatId
 request client ip:  ::ffff:192.168.1.70
 request body: 
-{}
-response time: 9
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"071L8uAr1ww9rm0NMhAr1hZtAr1L8uA-","grant_type":"authorization_code"}
+response time: 94
 response status: 200
 response body: 
-{"code":1,"data":[{"creatTime":1562166022048,"updataTime":1562166022048,"_id":"5d1e12b11164903bc9537a78","value":0,"text":"推荐","sort":0,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b114cc591511dfe033097","value":1,"text":"生活","sort":1,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1154c591511dfe033098","value":2,"text":"图书","sort":2,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b116fc591511dfe033099","value":3,"text":"外设","sort":3,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1181c591511dfe03309a","value":4,"text":"文娱","sort":4,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b118cc591511dfe03309b","value":5,"text":"护肤","sort":5,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1193c591511dfe03309c","value":6,"text":"交通","sort":6,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f2c591511dfe03309d","value":7,"text":"摄影","sort":7,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f9c591511dfe03309e","value":8,"text":"运动","sort":8,"__v":0}],"msg":"success"}
+{"session_key":"wu/Mgkofgd4+jIglwzw2wA==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+
+[2019-07-09T19:42:03.468] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+response time: 8
+response status: 200
+response body: 
+{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MjUyMywiZXhwIjoxNTYzOTY4NTIzfQ.3h0s6Cz5iLOGTkrcRhauFP4iDWjsY2KG4EEXmYUCTDs","userId":"5d145ee6c50c3201d17dc28a"},"msg":"该用户已存在"}
 *************** response log end ***************
 

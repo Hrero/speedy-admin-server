@@ -1,0 +1,39 @@
+[2019-07-12T22:28:55.800] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.0.120
+request body: 
+{}
+response time: 7
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+
+[2019-07-12T22:28:59.546] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getUserDetail
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+*************** response log end ***************
+
+[2019-07-12T22:29:23.737] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.0.104
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021Dv3K62TliiQ06owL62Qe6K62Dv3Kz","grant_type":"authorization_code"}
+response time: 34776
+response status: 200
+response body: 
+{"name":"RequestError","message":"Error: getaddrinfo ENOTFOUND api.weixin.qq.com api.weixin.qq.com:443","cause":{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"api.weixin.qq.com","host":"api.weixin.qq.com","port":443},"error":{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"api.weixin.qq.com","host":"api.weixin.qq.com","port":443},"options":{"method":"GET","uri":"https://api.weixin.qq.com/sns/jscode2session","json":true,"headers":{"X-Auth-Token":"","X-Request-Source":"weChat_app_speedy","X-Request-Version":"v2","User-Real-IP":"::ffff:192.168.0.104"},"qs":{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021Dv3K62TliiQ06owL62Qe6K62Dv3Kz","grant_type":"authorization_code"},"simple":true,"resolveWithFullResponse":false,"transform2xxOnly":false}}
+*************** response log end ***************
+

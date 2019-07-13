@@ -8,7 +8,8 @@ class userToCollectController {
         let req = ctx.request.body
         let userId = req.userId? req.userId: ctx.state.userId;
         let result = await UserToCollect.find({
-            userId: userId
+            userId: userId,
+            status: 1
         }).populate({
             path: 'dep',
             populate: {
@@ -16,7 +17,7 @@ class userToCollectController {
             }
         })
         for (let i=0; i< result.length; i++) {
-            result[i]._doc.imageUrl = await Utils.getArrForStr(result[i].imageUrl);
+            result[i].dep._doc.imageUrl = await Utils.getArrForStr(result[i].dep.imageUrl);
         }
         ctx.body = {
             code: 1,

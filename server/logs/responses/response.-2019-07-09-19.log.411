@@ -1,0 +1,39 @@
+[2019-07-09T19:12:15.059] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCollectionList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{}
+response time: 31
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{}}
+*************** response log end ***************
+
+[2019-07-09T19:12:16.635] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCollectionList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{}
+response time: 10
+response status: 200
+response body: 
+{"code":0,"data":{},"msg":{}}
+*************** response log end ***************
+
+[2019-07-09T19:13:05.841] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0817aeHO14TvQ81YiEJO1qcXGO17aeH2","grant_type":"authorization_code"}
+response time: 81
+response status: 200
+response body: 
+{"session_key":"knATGqrM0hi49ZhfQirk3Q==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

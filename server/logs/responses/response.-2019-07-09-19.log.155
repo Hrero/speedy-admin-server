@@ -1,13 +1,13 @@
-[2019-07-09T19:16:23.812] [INFO] resLogger - 
+[2019-07-09T19:38:59.859] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/getCommodityTypeList
+request originalUrl:  /api/user/getUserDetail
 request client ip:  ::ffff:192.168.1.70
 request body: 
 {}
-response time: 7
+response time: 1
 response status: 200
 response body: 
-{"code":1,"data":[{"creatTime":1562166022048,"updataTime":1562166022048,"_id":"5d1e12b11164903bc9537a78","value":0,"text":"推荐","sort":0,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b114cc591511dfe033097","value":1,"text":"生活","sort":1,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1154c591511dfe033098","value":2,"text":"图书","sort":2,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b116fc591511dfe033099","value":3,"text":"外设","sort":3,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1181c591511dfe03309a","value":4,"text":"文娱","sort":4,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b118cc591511dfe03309b","value":5,"text":"护肤","sort":5,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1193c591511dfe03309c","value":6,"text":"交通","sort":6,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f2c591511dfe03309d","value":7,"text":"摄影","sort":7,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f9c591511dfe03309e","value":8,"text":"运动","sort":8,"__v":0}],"msg":"success"}
+{"code":1,"data":{"sex":0,"attentionNum":1,"fansNum":1,"isFans":1,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MjMzOCwiZXhwIjoxNTYzOTY4MzM4fQ.1XNDMvOItVsCkaR2il3CSl1ELlicGJm8HLYRnilutAU","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京航空航天大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"msg":"success"}
 *************** response log end ***************
 

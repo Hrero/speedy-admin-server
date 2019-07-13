@@ -1,0 +1,26 @@
+[2019-07-11T19:21:41.636] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addRemarks
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122"}
+response time: 32
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+
+[2019-07-11T19:28:33.258] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addRemarks
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","content":"二级","depComm":"5d21bcdaca0153f63a89a122","fromUid":"5d1cbe35922fbb396f9219ac","toUid":"5d145ee6c50c3201d17dc28a","targetId":"5d21bcdaca0153f63a89a122","targetFirstId":"5d21bcdaca0153f63a89a122"}
+response time: 14
+response status: 200
+response body: 
+{"code":1,"data":{"sex":1,"creatTime":1562844071737,"updataTime":1562844071737,"_id":"5d271d61cd6cf4274f09bc5d","commodityId":"5d21bcdaca0153f63a89a122","content":"二级","depUser":"5d145ee6c50c3201d17dc28a","depComm":"5d21bcdaca0153f63a89a122","fromUid":"5d1cbe35922fbb396f9219ac","toUid":"5d145ee6c50c3201d17dc28a","targetId":"5d21bcdaca0153f63a89a122","targetFirstId":"5d21bcdaca0153f63a89a122","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","__v":0},"msg":"success"}
+*************** response log end ***************
+

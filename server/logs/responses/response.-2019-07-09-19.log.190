@@ -1,13 +1,13 @@
-[2019-07-09T19:13:06.914] [INFO] resLogger - 
+[2019-07-09T19:33:38.172] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getEverybodySearching
+request originalUrl:  /api/user/getUserDetail
 request client ip:  ::ffff:192.168.1.70
 request body: 
 {}
-response time: 18
+response time: 3
 response status: 200
 response body: 
-{"code":1,"data":{"userHistorySearch":[{"times":1,"status":1,"creatTime":1562122554387,"updataTime":1562122554387,"_id":"5d1c1a44f5b38a9bfcae5e3a","search":"110","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562123293228,"updataTime":1562123293228,"_id":"5d1c1da7e01b2d9f7d163937","search":"sunny","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562493033021,"updataTime":1562493033021,"_id":"5d21c07c36354df73deb1538","search":"收藏","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},{"times":1,"status":1,"creatTime":1562493156048,"updataTime":1562493156048,"_id":"5d21c0eede8472f79c7d5ec9","search":"1102111","userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0}],"searchArrayList":[{"text":"112了","count":1},{"text":"110","count":1},{"text":"1102111","count":1},{"text":"1121","count":1},{"text":"1122","count":1},{"text":"11222","count":1},{"text":"112444","count":1},{"text":"1124441","count":1},{"text":"1125","count":1},{"text":"11253","count":1},{"text":"112534","count":1},{"text":"112ads","count":1},{"text":"1102","count":1},{"text":"112了2","count":1},{"text":"112了21","count":1},{"text":"112了213","count":1},{"text":"115","count":1},{"text":"Sunny","count":1},{"text":"sunny","count":1},{"text":"大哥来了啊","count":1}]},"msg":"success"}
+{"code":1,"data":{"sex":0,"attentionNum":1,"fansNum":1,"isFans":1,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MjAxNywiZXhwIjoxNTYzOTY4MDE3fQ.F-zltcevxT7YDMxRVtpPdcChI5atvx_36Z18xuqY1Fc","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京航空航天大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"msg":"success"}
 *************** response log end ***************
 

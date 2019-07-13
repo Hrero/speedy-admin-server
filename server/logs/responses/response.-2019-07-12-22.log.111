@@ -1,0 +1,13 @@
+[2019-07-12T22:36:06.662] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/saveCommodity
+request client ip:  ::ffff:192.168.0.103
+request body: 
+{"imageUrl":"[{\"height\":1920,\"width\":1080,\"path\":\"https://static2.zugeliang01.com/20190712/439234e0-a4b2-11e9-a1b6-ebde69790d8d.jpg\"}]","productDes":"sklv","phoneNumber":18618494521,"school":"北京大学","type":2,"firstImgHeight":1920,"firstImgWidth":1080,"imgMaxHeight":"{\"width\":1080,\"height\":1920,\"size\":0.5625}"}
+response time: 6
+response status: 200
+response body: 
+{"code":1,"data":{"collect":0,"transmit":0,"like":0,"ourRatings":0,"isCollect":"","isLike":"","firstImgHeight":1920,"firstImgWidth":1080,"imgMaxHeight":"{\"width\":1080,\"height\":1920,\"size\":0.5625}","status":0,"creatTime":1562925024748,"updataTime":1562925024748,"_id":"5d289ad65e601d3e6cffcea9","productDes":"sklv","imageUrl":"[{\"height\":1920,\"width\":1080,\"path\":\"https://static2.zugeliang01.com/20190712/439234e0-a4b2-11e9-a1b6-ebde69790d8d.jpg\"}]","phoneNumber":18618494521,"school":"北京大学","type":2,"userId":"5d145ee6c50c3201d17dc28a","dep":"5d145ee6c50c3201d17dc28a","__v":0},"msg":"success"}
+*************** response log end ***************
+

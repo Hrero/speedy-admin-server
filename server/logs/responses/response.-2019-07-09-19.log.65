@@ -1,39 +1,13 @@
-[2019-07-09T19:23:39.270] [INFO] resLogger - 
+[2019-07-09T19:48:51.416] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getCommodityList
+request originalUrl:  /api/user/getUserDetail
 request client ip:  ::ffff:192.168.1.70
 request body: 
-{"pageSize":5,"pageNum":2}
-response time: 5
+{}
+response time: 2
 response status: 200
 response body: 
-{"code":1,"data":{"data":[],"total":3},"msg":"success"}
-*************** response log end ***************
-
-[2019-07-09T19:23:41.422] [INFO] resLogger - 
-*************** response log start ***************
-request method: POST
-request originalUrl:  /api/user/getCommodityList
-request client ip:  ::ffff:192.168.1.70
-request body: 
-{"pageSize":5,"pageNum":3}
-response time: 13
-response status: 200
-response body: 
-{"code":1,"data":{"data":[],"total":3},"msg":"success"}
-*************** response log end ***************
-
-[2019-07-09T19:23:48.247] [INFO] resLogger - 
-*************** response log start ***************
-request method: POST
-request originalUrl:  /api/xcx/weChat/getWeChatId
-request client ip:  ::ffff:192.168.1.70
-request body: 
-{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"0817jux22lsA9V0IdYw22hgMx227juxH","grant_type":"authorization_code"}
-response time: 87
-response status: 200
-response body: 
-{"session_key":"H5k5O4aOTsIVHajjZ1K7Gg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+{"code":1,"data":{"sex":0,"attentionNum":1,"fansNum":1,"isFans":1,"creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MjkzMCwiZXhwIjoxNTYzOTY4OTMwfQ.K8HF9z9Dw1H0d--0ywNCUFUpaaOoiMe-bXBRIYe66tM","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京航空航天大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"msg":"success"}
 *************** response log end ***************
 

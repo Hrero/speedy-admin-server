@@ -1,0 +1,26 @@
+[2019-07-10T22:04:51.821] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getRemarksList
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122"}
+response time: 29
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+
+[2019-07-10T22:06:59.269] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getRemarksList
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122"}
+response time: 30
+response status: 200
+response body: 
+{"data":""}
+*************** response log end ***************
+

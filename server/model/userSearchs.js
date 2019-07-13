@@ -2,7 +2,7 @@ const mongoose = require('../db/db');
 const defaultSchemaOptions = require('../public/defaultSchemaOptions');
 const Schema = mongoose.Schema;
 
-userSearchs = new Schema({ // 用户收藏表
+userSearchs = new Schema({ // 用户搜索表
         userId: { // 用户id
             type: String,
             required: true

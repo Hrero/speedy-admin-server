@@ -1,0 +1,26 @@
+[2019-07-13T10:57:35.389] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/clearMessage
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122"}
+response time: 10
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-07-13T10:59:52.106] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/clearMessage
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122"}
+response time: 36
+response status: 200
+response body: 
+{"code":1,"data":{"n":8,"nModified":8,"ok":1},"msg":"success"}
+*************** response log end ***************
+

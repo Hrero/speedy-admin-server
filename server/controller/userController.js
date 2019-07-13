@@ -2,6 +2,7 @@ const User = require('../model/user');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
+const Remarks = require('../model/remarks');
 class UserController {
     static async saveUser(ctx, next) {
         let req = ctx.request.body;
@@ -91,8 +92,10 @@ class UserController {
         let req = ctx.request.body;
         let userId = req.userId? req.userId: ctx.state.userId;
         try {
-            let data = await User.findOne({_id: userId})
+            let data = await User.findOne({_id: userId});
+            let message = await Remarks.find({status: 1, toUid: ctx.state.userId});
             data._doc.isFans = Utils.getIsStatus(data, 'isFans', ctx.state.userId);
+            data._doc.message = message.length;
             ctx.body = {
                 code: 1,
                 data: data,

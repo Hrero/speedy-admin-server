@@ -1,0 +1,26 @@
+[2019-07-11T10:53:29.220] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addRemarks
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","depComm":"5d21bcdaca0153f63a89a122","toUid":"","targetId":"5d25cb5a0d1640589fb5895d","content":"222","targetFirstId":"5d25cb5a0d1640589fb5895d","nickName":"A sunny"}
+response time: 0
+response status: 200
+response body: 
+{"code":2001,"data":"","msg":"状态不太对！"}
+*************** response log end ***************
+
+[2019-07-11T10:54:17.107] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"021bchlb1beMLx0iApkb1tymlb1bchlp","grant_type":"authorization_code"}
+response time: 125
+response status: 200
+response body: 
+{"session_key":"B8VXTUwzL4t17spZsUU63Q==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

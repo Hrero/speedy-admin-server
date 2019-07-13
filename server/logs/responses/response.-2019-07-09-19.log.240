@@ -1,39 +1,39 @@
-[2019-07-09T19:00:39.150] [INFO] resLogger - 
+[2019-07-09T19:26:48.532] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getCollectionList
-request client ip:  ::ffff:192.168.1.70
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.129
 request body: 
-{}
-response time: 12
-response status: 200
-response body: 
-{"code":0,"data":{},"msg":{}}
-*************** response log end ***************
-
-[2019-07-09T19:00:54.636] [INFO] resLogger - 
-*************** response log start ***************
-request method: POST
-request originalUrl:  /api/xcx/weChat/getWeChatId
-request client ip:  ::ffff:192.168.1.70
-request body: 
-{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"011baplK09wFV92oCOmK0II2lK0baplV","grant_type":"authorization_code"}
-response time: 98
-response status: 200
-response body: 
-{"session_key":"yb5PTGfsUdbBvYLMYDqJlg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
-*************** response log end ***************
-
-[2019-07-09T19:00:54.660] [INFO] resLogger - 
-*************** response log start ***************
-request method: POST
-request originalUrl:  /api/xcx/weChat/thirdLoginIn
-request client ip:  ::ffff:192.168.1.70
-request body: 
-{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+{"pageSize":5,"pageNum":2}
 response time: 3
 response status: 200
 response body: 
-{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MDA1NCwiZXhwIjoxNTYzOTY2MDU0fQ.LKORC7E8jqj_eVXKAAO4d68Yz6FBb54z5rPLBos26O4","userId":"5d145ee6c50c3201d17dc28a"},"msg":"该用户已存在"}
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:26:50.769] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.129
+request body: 
+{"pageSize":5,"pageNum":3}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-09T19:26:52.336] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.129
+request body: 
+{"pageSize":5,"pageNum":4}
+response time: 3
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":3},"msg":"success"}
 *************** response log end ***************
 

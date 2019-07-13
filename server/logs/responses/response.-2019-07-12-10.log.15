@@ -1,0 +1,13 @@
+[2019-07-12T10:57:12.806] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/addRemarks
+request client ip:  ::ffff:192.168.0.129
+request body: 
+{"commodityId":"5d21bcdaca0153f63a89a122","depComm":"5d21bcdaca0153f63a89a122","toUid":{"sex":1,"attentionNum":1,"fansNum":1,"isFans":",,,,,,,,,,,,,,,,,,5d145ee6c50c3201d17dc28a","creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjkwMDE5NCwiZXhwIjoxNTY0MTk2MTk0fQ.WtV4ycWASXccOR0GzVwYtn8tdqmfnMxGVICtXj9YOlk","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"targetId":"5d27f578cd6cf4274f09bc6a","content":"888","targetFirstId":"5d271b3630aebb272530044a"}
+response time: 2
+response status: 200
+response body: 
+{"code":1,"data":{"sex":1,"creatTime":1562844071737,"updataTime":1562844071737,"_id":"5d27f708cd6cf4274f09bc6c","commodityId":"5d21bcdaca0153f63a89a122","content":"888","depUser":"5d145ee6c50c3201d17dc28a","depComm":"5d21bcdaca0153f63a89a122","fromUid":"5d145ee6c50c3201d17dc28a","toUid":"5d145ee6c50c3201d17dc28a","targetId":"5d27f578cd6cf4274f09bc6a","targetFirstId":"5d271b3630aebb272530044a","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","__v":0},"msg":"success"}
+*************** response log end ***************
+

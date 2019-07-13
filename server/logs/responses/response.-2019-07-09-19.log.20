@@ -1,39 +1,26 @@
-[2019-07-09T19:26:55.202] [INFO] resLogger - 
+[2019-07-09T19:53:53.206] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getCommodityList
-request client ip:  ::ffff:192.168.0.129
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
 request body: 
-{"pageSize":5,"pageNum":5}
-response time: 2
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"001Ovdab2VKNTL0FMeab2uDdab2Ovdaw","grant_type":"authorization_code"}
+response time: 95
 response status: 200
 response body: 
-{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+{"session_key":"Iy/Z0mIcwbHEEhtCC0NGdA==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
 *************** response log end ***************
 
-[2019-07-09T19:26:57.148] [INFO] resLogger - 
+[2019-07-09T19:53:53.323] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getCommodityList
-request client ip:  ::ffff:192.168.0.129
+request originalUrl:  /api/xcx/weChat/thirdLoginIn
+request client ip:  ::ffff:192.168.1.70
 request body: 
-{"pageSize":5,"pageNum":6}
+{"openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
 response time: 3
 response status: 200
 response body: 
-{"code":1,"data":{"data":[],"total":3},"msg":"success"}
-*************** response log end ***************
-
-[2019-07-09T19:26:58.581] [INFO] resLogger - 
-*************** response log start ***************
-request method: POST
-request originalUrl:  /api/user/getCommodityList
-request client ip:  ::ffff:192.168.0.129
-request body: 
-{"pageSize":5,"pageNum":7}
-response time: 2
-response status: 200
-response body: 
-{"code":1,"data":{"data":[],"total":3},"msg":"success"}
+{"code":0,"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjY3MzIzMywiZXhwIjoxNTYzOTY5MjMzfQ.ghqkO3J6weEuXdmmzriwVxVYoZ91Guz1-DNFbv1T-kQ","userId":"5d145ee6c50c3201d17dc28a"},"msg":"该用户已存在"}
 *************** response log end ***************
 

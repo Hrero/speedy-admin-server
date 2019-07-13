@@ -1,0 +1,13 @@
+[2019-07-12T22:37:23.562] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getCommodityList
+request client ip:  ::ffff:192.168.0.103
+request body: 
+{"pageSize":5,"pageNum":1,"type":2}
+response time: 8
+response status: 200
+response body: 
+{"code":1,"data":{"data":[{"collect":0,"transmit":0,"like":0,"ourRatings":0,"isCollect":0,"isLike":0,"firstImgHeight":1920,"firstImgWidth":1080,"imgMaxHeight":{"width":1080,"height":1920,"size":0.5625},"status":0,"creatTime":1562925024748,"updataTime":1562925024748,"_id":"5d289ad65e601d3e6cffcea9","productDes":"sklv","imageUrl":[{"height":1920,"width":1080,"path":"https://static2.zugeliang01.com/20190712/439234e0-a4b2-11e9-a1b6-ebde69790d8d.jpg"}],"phoneNumber":18618494521,"school":"北京大学","type":2,"userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":1,"fansNum":1,"isFans":",,,,,,,,,,,,,,,,,,5d145ee6c50c3201d17dc28a","creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2MjkyODMxMiwiZXhwIjoxNTY0MjI0MzEyfQ.cyHVrdhV9UN7mHlDGtaQDvQPjPEPlC2ljkxxy61vIfA","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"__v":0}],"total":13},"msg":"success"}
+*************** response log end ***************
+

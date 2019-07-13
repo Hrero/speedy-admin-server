@@ -1,0 +1,39 @@
+[2019-07-12T17:18:27.189] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/getCommodityDetail
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"commodityId":""}
+response time: 0
+response status: 200
+response body: 
+{"code":2001,"data":"","msg":"状态不太对！"}
+*************** response log end ***************
+
+[2019-07-12T17:18:27.193] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/user/getRemarksList
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{}
+response time: 4
+response status: 200
+response body: 
+{"code":1,"data":{"data":[],"total":0},"msg":"success"}
+*************** response log end ***************
+
+[2019-07-12T17:19:01.738] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/xcx/weChat/getWeChatId
+request client ip:  ::ffff:192.168.1.70
+request body: 
+{"appid":"wx5aaaec189466b376","secret":"5f25cab72ad17562a5cd14cdaa18aa47","js_code":"071sJgwm1Jbyvq0c77ym1y0lwm1sJgwD","grant_type":"authorization_code"}
+response time: 104
+response status: 200
+response body: 
+{"session_key":"qp+4+LwjpPcBcg83Kti8gg==","openid":"onioU0SKwZ170Yj6Wv8ZCYb122u4"}
+*************** response log end ***************
+

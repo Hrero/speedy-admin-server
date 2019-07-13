@@ -1,4 +1,5 @@
 const Commodity = require('../model/commodity');
+const Remarks = require('../model/remarks');
 const UserSearchs = require('../model/userSearchs');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
@@ -50,6 +51,7 @@ class commodityController {
          * keyword 关键词检索 传入检索productDes字段
          */
         let req = ctx.request.body;
+        let school = decodeURI(ctx.request.header.cookie).match(/[\u4e00-\u9fa5]/g).join("");
         let pageSize = parseInt(req.pageSize) || 20;
         let pageNum = parseInt(req.pageNum) < 1? 1: req.pageNum;
         let skip = (parseInt(pageNum) - 1) * pageSize;
@@ -101,18 +103,19 @@ class commodityController {
             }
         }
         if (req.type === 0) {
-            lookUp= await Commodity.find({}).populate('dep').sort({ ourRatings: -1 }).skip(skip).limit(pageSize);
+            lookUp= await Commodity.find({school: school}).populate('dep').sort({ ourRatings: -1, _id: -1 }).skip(skip).limit(pageSize);
         } else {
             lookUp= await Commodity.find({
                 $or: [ //多条件，数组
                     {
                         productDes: {
                             $regex: keyword
-                        } 
+                        }
                     }
                 ],
+                school: school,
                 ...query
-            }).populate('dep').skip(skip).limit(pageSize);
+            }).populate('dep').sort({ _id: -1 }).skip(skip).limit(pageSize);
         }
         let res = [...lookUp];
         for (let i=0; i< res.length; i++) {
@@ -132,6 +135,8 @@ class commodityController {
     }
     static async getCommodityDetail(ctx, next) {
         let req = ctx.request.body;
+        let arr = []
+        let other = [];
         try {
             for (const key in req) {
                 if (req[key] === undefined || req[key] === "") {
@@ -141,6 +146,27 @@ class commodityController {
             let res = await Commodity.findOne({
                 _id: req.commodityId
             }).populate('dep')
+            let total = await Remarks.find({
+                commodityId: req.commodityId
+            })
+            let lookUp = await Remarks.find({
+                commodityId: req.commodityId
+            }).populate('depUser').populate('depComm').populate('fromUid').populate('toUid').sort({ _id: -1 });
+            for (let i=0; i< lookUp.length; i++) {
+                if (lookUp[i].targetId == req.commodityId) {
+                    lookUp[i]._doc.child = []
+                    arr.push(lookUp[i])
+                } else {
+                    other.push(lookUp[i])
+                }
+            }
+            for (let i=0; i < other.length; i++) {
+                for (let k=0; k < arr.length; k++) {
+                    if (other[i].targetFirstId == arr[k]._id) {
+                        arr[k]._doc.child.push(other[i])
+                    }
+                }
+            }
             res._doc.isCollect = Utils.getIsStatus(res, 'isCollect', ctx.state.userId);
             res._doc.isLike = Utils.getIsStatus(res, 'isLike', ctx.state.userId);
             res.dep._doc.isFans = Utils.getIsStatus(res.dep, 'isFans', ctx.state.userId);
@@ -148,7 +174,11 @@ class commodityController {
             res._doc.imageUrl = await Utils.getArrForStr(res.imageUrl);
             ctx.body = {
                 code: 1,
-                data: res,
+                data: {
+                    res,
+                    arr,
+                    total: total.length
+                },
                 msg: 'success'
             }
         } catch(err) {
