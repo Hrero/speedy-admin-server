@@ -1,13 +1,13 @@
-[2019-07-13T11:30:27.039] [INFO] resLogger - 
+[2019-07-13T11:49:52.593] [INFO] resLogger - 
 *************** response log start ***************
 request method: POST
-request originalUrl:  /api/user/getCollectionList
+request originalUrl:  /api/getCommodityTypeList
 request client ip:  ::ffff:192.168.1.70
 request body: 
 {}
-response time: 6
+response time: 2
 response status: 200
 response body: 
-{"code":1,"data":[{"status":1,"creatTime":1562988435910,"updataTime":1562988435910,"_id":"5d2950111c9bb34c3e5e0e57","commodityId":"5d21bcdaca0153f63a89a122","userId":"5d145ee6c50c3201d17dc28a","dep":{"collect":1,"transmit":1,"like":1,"ourRatings":6.5,"isCollect":",,5d145ee6c50c3201d17dc28a","isLike":",,,,5d145ee6c50c3201d17dc28a","firstImgHeight":200,"firstImgWidth":200,"imgMaxHeight":"{\"width\":200,\"height\":200,\"size\":1}","status":0,"creatTime":1562492028859,"updataTime":1562492028859,"_id":"5d21bcdaca0153f63a89a122","productDes":"收藏","imageUrl":"[{\"height\":200,\"width\":200,\"path\":\"https://static2.zugeliang01.com/20190707/88646780-a09a-11e9-aeaa-7964b9e6c3b9.png\"}]","phoneNumber":18618494521,"school":"北京大学","type":1,"userId":"5d145ee6c50c3201d17dc28a","dep":{"sex":1,"attentionNum":1,"fansNum":1,"isFans":",,,,,,,,,,,,,,,,,,,,,5d145ee6c50c3201d17dc28a","creatTime":1561616079055,"updataTime":1561616079055,"_id":"5d145ee6c50c3201d17dc28a","openId":"onioU0SKwZ170Yj6Wv8ZCYb122u4","__v":0,"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoy75TtszB6cT9a6T5hY7EpkAGwlqImKTfBIGbTXsv36nqnJxQXAV8RZjzX0tGqxKaVr7NFOsv5JQ/132","nickName":"A sunny","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkMTQ1ZWU2YzUwYzMyMDFkMTdkYzI4YSIsImlhdCI6MTU2Mjk4ODYyMywiZXhwIjoxNTY0Mjg0NjIzfQ.gAWw87E8Vllmxas2GW5SVGxc4Y1zIFhnAB2CWELYOqA","birthday":"2016-04-27","signature":"大家好，我是阿杜！","school":"北京大学","studentNumber":1111111111,"phoneNumber":18618494521,"name":"郝增润"},"__v":0},"__v":0}],"msg":"success"}
+{"code":1,"data":[{"creatTime":1562166022048,"updataTime":1562166022048,"_id":"5d1e12b11164903bc9537a78","value":0,"text":"推荐","sort":0,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b114cc591511dfe033097","value":1,"text":"生活","sort":1,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1154c591511dfe033098","value":2,"text":"图书","sort":2,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b116fc591511dfe033099","value":3,"text":"外设","sort":3,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1181c591511dfe03309a","value":4,"text":"文娱","sort":4,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b118cc591511dfe03309b","value":5,"text":"护肤","sort":5,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b1193c591511dfe03309c","value":6,"text":"交通","sort":6,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f2c591511dfe03309d","value":7,"text":"摄影","sort":7,"__v":0},{"creatTime":1562054859042,"updataTime":1562054859042,"_id":"5d1b11f9c591511dfe03309e","value":8,"text":"运动","sort":8,"__v":0}],"msg":"success"}
 *************** response log end ***************
 
