@@ -7,6 +7,7 @@ class userToCollectController {
     static async getCollectionList(ctx) {
         let req = ctx.request.body
         let userId = req.userId? req.userId: ctx.state.userId;
+        
         let result = await UserToCollect.find({
             userId: userId,
             status: 1

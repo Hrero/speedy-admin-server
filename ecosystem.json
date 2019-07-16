@@ -1,16 +1,16 @@
 {
   "apps": [{
-    "name": "pm2-auto-web",
+    "name": "speedy-mina-server",
     "script": "app.js",
     "node_args": "--harmony"
   }],
   "deploy": {
     "production": {
       "user": "root",
-      "host": "47.98.176.188",
+      "host": "49.234.63.236",
       "ref": "origin/master",
-      "repo": "git@github.com:Hrero/pm2-auto-web.git",
-      "path": "/www/pm2-auto-web",
+      "repo": "git@github.com:Hrero/speedy-admin-server.git",
+      "path": "/www/speedy-mina-server",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
