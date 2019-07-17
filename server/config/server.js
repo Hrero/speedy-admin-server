@@ -4,8 +4,7 @@ const os = require('os');
 const network = os.networkInterfaces();
 const cjson = require('cjson');
 
-const productionList = ['121.41.54.208', '118.31.186.202'];
-const testList = ['10.252.116.190', '192.168.0.222'];
+const productionList = ['49.234.63.236'];
 const root = path.resolve(__dirname, '../..');
 const cdnVersion = cjson.load(path.join(root, 'cdn.json')).version;
 
@@ -17,8 +16,6 @@ for (let key in network) {
     for (let i = 0; i < ip.length; i++) {
         if (productionList.indexOf(ip[i].address) > -1) {
             evn = 'production';
-        } else if (testList.indexOf(ip[i].address) > -1) {
-            evn = 'test';
         }
     }
 }
@@ -58,7 +55,7 @@ const config = {
             cdnFile: 'https://static1.zugeliang01.com/'
         },
         apiProxy: {
-            javaServer: 'https://appserver.zugeliang01.com',
+            javaServer: 'http://49.234.63.236',
             mockData: false,
             cache: false,
             cacheTime: 30 * 60 * 1000
