@@ -1,4 +1,4 @@
-#export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin
 node -v
 pwd
 #npm install --production
