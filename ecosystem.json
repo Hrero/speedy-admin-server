@@ -11,7 +11,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:Hrero/speedy-admin-server.git",
       "path": "/www/speedy-mina-server",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy": "bash /www/speedy-mina-server/current/deploy.sh"
     }
   }
 }

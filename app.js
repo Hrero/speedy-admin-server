@@ -43,3 +43,5 @@ app.listen(config.port)
 if(config.environment === 'development'){
     console.log('\x1B[32m 打开浏览器运行 127.0.0.1:'+config.port+' , 愿你开心快乐每一天\x1b[37m');
 }
+
+// "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
