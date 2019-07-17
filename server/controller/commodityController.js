@@ -4,8 +4,8 @@ const UserSearchs = require('../model/userSearchs');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
-let commodityController = {
-    saveCommodity: (ctx) => {
+class commodityController {
+    static async saveCommodity(ctx) {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -45,8 +45,8 @@ let commodityController = {
             }
             return;
         }
-    },
-    getAllCommdity: (ctx, next) => {
+    }
+    static async getAllCommdity(ctx, next) {
         /**
          * keyword 关键词检索 传入检索productDes字段
          */
@@ -132,8 +132,8 @@ let commodityController = {
             },
             msg: 'success'
         }
-    },
-    getCommodityDetail: (ctx, next) => {
+    }
+    static async getCommodityDetail(ctx, next) {
         let req = ctx.request.body;
         let arr = []
         let other = [];
@@ -189,8 +189,8 @@ let commodityController = {
             }
             return;
         }
-    },
-    getUserCommodityList: (ctx, next) => {
+    }
+    static async getUserCommodityList(ctx, next) {
         let req = ctx.request.body;
         for (const key in req) {
             if (req[key] === undefined || req[key] === "") {
@@ -209,8 +209,8 @@ let commodityController = {
             data: res,
             msg: 'success'
         }
-    },
-    editStatus: (ctx, next) => {
+    }
+    static async editStatus(ctx, next) {
         let req = ctx.request.body
         /**
          * status 1 上线 0 审核
@@ -239,8 +239,8 @@ let commodityController = {
             }
             await next()
         }
-    },
-    addTransmit: (ctx, next) => {
+    }
+    static async addTransmit(ctx, next) {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -268,8 +268,8 @@ let commodityController = {
             return;
         }
 
-    },
-    recommendToCommodity: (ctx, next) => {
+    }
+    static async recommendToCommodity(ctx, next) {
         let req = ctx.request.body;
         try { // 推荐30条
             let res = await Commodity.find({type: req.type}).populate('dep').sort({ ourRatings: -1 }).limit(30);
