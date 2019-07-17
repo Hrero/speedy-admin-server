@@ -35,19 +35,6 @@ const config = {
             cacheTime: 30 * 60 * 1000
         }
     },
-    test: {
-        environment: 'test',
-        staticPath: {
-            cdn: 'https://static1.zugeliang01.com/web-zgl/' + cdnVersion,
-            cdnFile: 'https://static1.zugeliang01.com/'
-        },
-        apiProxy: {
-            javaServer: 'https://server-test.zugeliang01.com',
-            mockData: false,
-            cache: false,
-            cacheTime: 30 * 60 * 1000
-        }
-    },
     production: {
         environment: 'production',
         staticPath: {
