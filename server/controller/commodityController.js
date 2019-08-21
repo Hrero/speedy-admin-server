@@ -51,9 +51,7 @@ module.exports = {
          * keyword 关键词检索 传入检索productDes字段
          */
         let req = ctx.request.body;
-        console.log(req, '==!!!===')
         let school = decodeURI(ctx.request.header.cookie).match(/[\u4e00-\u9fa5]/g).join("");
-        console.log(school, '==!!!===')
         let pageSize = parseInt(req.pageSize) || 20;
         let pageNum = parseInt(req.pageNum) < 1? 1: req.pageNum;
         let skip = (parseInt(pageNum) - 1) * pageSize;
@@ -106,7 +104,7 @@ module.exports = {
         }
         if (req.type === 0) {
             lookUp= await Commodity.find({school: school}).populate('dep').sort({ ourRatings: -1, _id: -1 }).skip(skip).limit(pageSize);
-            console.log(lookUp, '=====')
+            
         } else {
             lookUp= await Commodity.find({
                 $or: [ //多条件，数组
@@ -121,6 +119,7 @@ module.exports = {
             }).populate('dep').sort({ _id: -1 }).skip(skip).limit(pageSize);
         }
         let res = [...lookUp];
+        console.log(res, '=====')
         for (let i=0; i< res.length; i++) {
             res[i]._doc.isCollect = Utils.getIsStatus(res[i], 'isCollect', ctx.state.userId);
             res[i]._doc.isLike = Utils.getIsStatus(res[i], 'isLike', ctx.state.userId);
