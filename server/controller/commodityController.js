@@ -119,13 +119,13 @@ module.exports = {
             }).populate('dep').sort({ _id: -1 }).skip(skip).limit(pageSize);
         }
         let res = [...lookUp];
-        console.log(res, '=====')
         for (let i=0; i< res.length; i++) {
             res[i]._doc.isCollect = Utils.getIsStatus(res[i], 'isCollect', ctx.state.userId);
             res[i]._doc.isLike = Utils.getIsStatus(res[i], 'isLike', ctx.state.userId);
             res[i]._doc.imageUrl = await Utils.getArrForStr(res[i].imageUrl);
             res[i]._doc.imgMaxHeight = await Utils.getArrForStr(res[i].imgMaxHeight);
         }
+        console.log(res, '=====')
         ctx.body = {
             code: 1,
             data: {
