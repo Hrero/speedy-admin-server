@@ -104,6 +104,7 @@ module.exports = {
         }
         if (req.type === 0) {
             lookUp= await Commodity.find({school: school}).populate('dep').sort({ ourRatings: -1, _id: -1 }).skip(skip).limit(pageSize);
+            console.log(lookUp, '=====')
         } else {
             lookUp= await Commodity.find({
                 $or: [ //多条件，数组
