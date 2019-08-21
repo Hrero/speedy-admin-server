@@ -107,6 +107,7 @@ module.exports = {
             }
             await next()
         } catch (err) {
+            console.log(err, '=!!****!!===')
             ctx.body = {
                 code: err.code,
                 data: '',
