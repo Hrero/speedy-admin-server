@@ -13,8 +13,11 @@ const commodityTypeController = require('../controller/commodityTypeController')
 const remarksController = require('../controller/remarksController');
 
 // 用户
+console.log(2)
 routerApi.post('/api/user/addUser', UserController.saveUser); // 添加用户
+console.log(1)
 routerApi.post('/api/user/getUserList', token.auth, UserController.getAllUser); // 查询用户
+console.log(3)
 routerApi.post('/api/user/getUserDetail', token.auth, UserController.userDetail); // 查询用户详情
 routerApi.post('/api/user/userUpdate', token.auth, UserController.userUpdate); // 用户信息更新
 // 关注

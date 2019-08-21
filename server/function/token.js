@@ -20,6 +20,7 @@ module.exports = {
         }
     },
     auth: async (ctx, next) => {
+        console.log(4)
         let token = ctx.header['authorization']
         if (token) {
             try { // 解析token
