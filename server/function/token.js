@@ -20,12 +20,10 @@ module.exports = {
         }
     },
     auth: async (ctx, next) => {
-        console.log(4)
         let token = ctx.header['authorization']
         if (token) {
             try { // 解析token
                 let data = await jwt.verify(token, secret);
-                console.log(data)
                 if (data) {
                     ctx.state.userId = data.id;
                     await next();

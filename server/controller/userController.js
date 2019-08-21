@@ -42,7 +42,6 @@ module.exports = {
         }
     },
     getAllUser: async (ctx, next) => {
-        console.log(5)
         let req = ctx.request.body;
         let pageSize = parseInt(req.pageSize) || 20;
         let pageNum = parseInt(req.pageNum) < 1? 1: req.pageNum;

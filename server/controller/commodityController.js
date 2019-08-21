@@ -119,7 +119,6 @@ module.exports = {
             }).populate('dep').sort({ _id: -1 }).skip(skip).limit(pageSize);
         }
         let res = [...lookUp];
-        console.log(res, '=====')
         for (let i=0; i< res.length; i++) {
             console.log(Utils.getIsStatus(res[i], 'isCollect', ctx.state.userId), '===!==')
             console.log(res[i]._doc.isCollect, '===!***==')
