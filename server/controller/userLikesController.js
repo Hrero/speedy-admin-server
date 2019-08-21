@@ -3,8 +3,8 @@ const Commodity = require('../model/commodity');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
-class userLikesController {
-    static async addLike(ctx, next) {
+module.exports = {
+    addLike: async (ctx, next) => {
         // let data = {
         //     commodityId: '5d145ee6c50c3201d17dc28a'
         // }
@@ -85,4 +85,3 @@ class userLikesController {
         }
     }
 }
-module.exports = userLikesController

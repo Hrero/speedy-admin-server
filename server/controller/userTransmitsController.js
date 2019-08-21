@@ -2,8 +2,8 @@ const UserTransmits = require('../model/userTransmits');
 const Commodity = require('../model/commodity');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
-class userTransmitsController {
-    static async addTransmit(ctx, next) {
+module.exports = {
+    addTransmit: async (ctx, next) => {
         // let data = {
         //     commodityId: '5d145ee6c50c3201d17dc28a'
         // }
@@ -53,4 +53,3 @@ class userTransmitsController {
         }
     }
 }
-module.exports = userTransmitsController

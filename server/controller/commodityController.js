@@ -4,8 +4,8 @@ const UserSearchs = require('../model/userSearchs');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
-class commodityController {
-    static async saveCommodity(ctx) {
+module.exports = {
+    saveCommodity: async (ctx) => {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -45,8 +45,8 @@ class commodityController {
             }
             return;
         }
-    }
-    static async getAllCommdity(ctx, next) {
+    },
+    getAllCommdity: async (ctx, next) => {
         /**
          * keyword 关键词检索 传入检索productDes字段
          */
@@ -132,8 +132,8 @@ class commodityController {
             },
             msg: 'success'
         }
-    }
-    static async getCommodityDetail(ctx, next) {
+    },
+    getCommodityDetail: async (ctx, next) => {
         let req = ctx.request.body;
         let arr = []
         let other = [];
@@ -189,8 +189,8 @@ class commodityController {
             }
             return;
         }
-    }
-    static async getUserCommodityList(ctx, next) {
+    },
+    getUserCommodityList: async (ctx, next) => {
         let req = ctx.request.body;
         for (const key in req) {
             if (req[key] === undefined || req[key] === "") {
@@ -209,8 +209,8 @@ class commodityController {
             data: res,
             msg: 'success'
         }
-    }
-    static async editStatus(ctx, next) {
+    },
+    editStatus: async (ctx, next) => {
         let req = ctx.request.body
         /**
          * status 1 上线 0 审核
@@ -239,8 +239,8 @@ class commodityController {
             }
             await next()
         }
-    }
-    static async addTransmit(ctx, next) {
+    },
+    addTransmit: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -268,8 +268,8 @@ class commodityController {
             return;
         }
 
-    }
-    static async recommendToCommodity(ctx, next) {
+    },
+    recommendToCommodity: async (ctx, next) => {
         let req = ctx.request.body;
         try { // 推荐30条
             let res = await Commodity.find({type: req.type}).populate('dep').sort({ ourRatings: -1 }).limit(30);
@@ -294,4 +294,3 @@ class commodityController {
         }
     }
 }
-module.exports = commodityController

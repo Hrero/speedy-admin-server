@@ -2,8 +2,8 @@ const UserSearchs = require('../model/userSearchs');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const utils = require('../function/utils');
-class SearchController {
-    static async getEverybodySearching(ctx, next) {
+module.exports = {
+    getEverybodySearching: async (ctx, next) => {
         const nowTimesTamp = new Date().getTime();
         const oldWeeksTamp = new Date().getTime() - (1000 * 60 * 60 * 24 * 7);
         let allSearch = await UserSearchs.find({
@@ -22,8 +22,8 @@ class SearchController {
             },
             msg: 'success'
         }
-    }
-    static async deleteUserSearch(ctx, next) {
+    },
+    deleteUserSearch: async (ctx, next) => {
         try {
             let userHistorySearch = await UserSearchs.updateMany({userId: ctx.state.userId}, {
                 status: 0
@@ -44,4 +44,3 @@ class SearchController {
 
     }
 }
-module.exports = SearchController

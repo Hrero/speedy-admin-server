@@ -3,8 +3,8 @@ const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
 const Remarks = require('../model/remarks');
-class UserController {
-    static async saveUser(ctx, next) {
+module.exports = {
+    saveUser: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -40,8 +40,8 @@ class UserController {
             }
             return;
         }
-    }
-    static async getAllUser(ctx, next) {
+    },
+    getAllUser: async (ctx, next) => {
         let req = ctx.request.body;
         let pageSize = parseInt(req.pageSize) || 20;
         let pageNum = parseInt(req.pageNum) < 1? 1: req.pageNum;
@@ -87,8 +87,8 @@ class UserController {
             },
             msg: 'success'
         }
-    }
-    static async userDetail(ctx, next) {
+    },
+    userDetail: async (ctx, next) => {
         let req = ctx.request.body;
         let userId = req.userId? req.userId: ctx.state.userId;
         try {
@@ -110,8 +110,8 @@ class UserController {
             }
             return;
         }
-    }
-    static async userUpdate(ctx, next) {
+    },
+    userUpdate: async (ctx, next) => {
         let req = ctx.request.body;
         let params = {};
         for (const key in req) {
@@ -153,4 +153,3 @@ class UserController {
         }
     }
 }
-module.exports = UserController

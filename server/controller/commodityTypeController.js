@@ -2,8 +2,8 @@ const CommodityType = require('../model/commodityType');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const utils = require('../function/utils');
-class commodityTypeController {
-    static async getCommodityTypeList(ctx, next) {
+module.exports = {
+    getCommodityTypeList: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let data = await CommodityType.find({}).sort({
@@ -22,8 +22,8 @@ class commodityTypeController {
             }
             return;
         }
-    }
-    static async addCommodityType(ctx, next) {
+    },
+    addCommodityType: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let res = await CommodityType.findOne({
@@ -60,4 +60,3 @@ class commodityTypeController {
         }
     }
 }
-module.exports = commodityTypeController

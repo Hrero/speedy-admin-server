@@ -3,8 +3,8 @@ const Commodity = require('../model/commodity');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
-class userToCollectController {
-    static async getCollectionList(ctx) {
+module.exports = {
+    getCollectionList: async (ctx) => {
         let req = ctx.request.body
         let userId = req.userId? req.userId: ctx.state.userId;
         
@@ -25,8 +25,8 @@ class userToCollectController {
             data: result,
             msg: 'success'
         }
-    }
-    static async addCollection(ctx, next) {
+    },
+    addCollection: async (ctx, next) => {
         // let data = {
         //     commodityId: '5d145ee6c50c3201d17dc28a'，
         //     status: 0
@@ -110,4 +110,3 @@ class userToCollectController {
         }
     }
 }
-module.exports = userToCollectController

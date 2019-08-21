@@ -4,8 +4,8 @@ const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
 
-class userAttentionToController {
-    static async addAttention(ctx, next) {
+module.exports = {
+    addAttention: async (ctx, next) => {
         // let data = {
         //     attentionId: '5d048a835e4e3ae2b1c558c1',
         //     status: 0
@@ -77,8 +77,8 @@ class userAttentionToController {
                 msg: err.errmsg
             }
         }
-    }
-    static async userAttentionList(ctx, next) {
+    },
+    userAttentionList: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let fans = await UserAttentionTo.find({
@@ -120,4 +120,3 @@ class userAttentionToController {
         }
     }
 }
-module.exports = userAttentionToController

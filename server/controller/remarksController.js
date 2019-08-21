@@ -3,8 +3,8 @@ const User = require('../model/user');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
-class RemarksController {
-    static async addRemarks(ctx, next) {
+module.exports = {
+    addRemarks: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             for (const key in req) {
@@ -42,8 +42,8 @@ class RemarksController {
             }
             return;
         }
-    }
-    static async getRemarksList(ctx, next) {
+    },
+    getRemarksList: async (ctx, next) => {
         let req = ctx.request.body;
         let res = [];
         let other = [];
@@ -90,8 +90,8 @@ class RemarksController {
             }
             return;
         }
-    }
-    static async getMessageList(ctx, next) {
+    },
+    getMessageList: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let lookUp = await Remarks.find({
@@ -113,8 +113,8 @@ class RemarksController {
             }
             return;
         }
-    }
-    static async updateMessage(ctx, next) {
+    },
+    updateMessage: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let lookUp = await Remarks.updateMany({}, {$set: {status: 0}})
@@ -135,8 +135,8 @@ class RemarksController {
             return;
         }
 
-    }
-    static async clearMessage(ctx, next) {
+    },
+    clearMessage: async (ctx, next) => {
         let req = ctx.request.body;
         try {
             let lookUp = await Remarks.updateMany({
@@ -160,4 +160,3 @@ class RemarksController {
         }
     }
 }
-module.exports = RemarksController
