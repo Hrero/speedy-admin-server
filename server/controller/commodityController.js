@@ -52,6 +52,7 @@ module.exports = {
          */
         let req = ctx.request.body;
         let school = decodeURI(ctx.request.header.cookie).match(/[\u4e00-\u9fa5]/g).join("");
+        console.log(school, '==!!!===')
         let pageSize = parseInt(req.pageSize) || 20;
         let pageNum = parseInt(req.pageNum) < 1? 1: req.pageNum;
         let skip = (parseInt(pageNum) - 1) * pageSize;
