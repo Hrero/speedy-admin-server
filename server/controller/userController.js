@@ -95,6 +95,7 @@ module.exports = {
         console.log(userId, '====')
         try {
             let data = await User.findOne({_id: userId});
+            console.log(data, '=!!doc__!!===')
             let message = await Remarks.find({status: 1, toUid: ctx.state.userId});
             data._doc.isFans = Utils.getIsStatus(data, 'isFans', ctx.state.userId);
             data._doc.message = message.length;
