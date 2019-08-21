@@ -18,7 +18,7 @@ const setOptions = function(ctx, method, handleParams) {
     }
 }
 module.exports = {
-     demoCtrl: async (ctx, next) => { // 控制器的demo
+    demoCtrl: async (ctx, next) => { // 控制器的demo
          // 获取传参数的方法
          const demoPostUrl = serverUrl + '服务器的请求地址';
          let params = {}; // 自定义参数

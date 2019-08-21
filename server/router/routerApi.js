@@ -2,7 +2,8 @@ const routerApi = require('koa-router')();
 const token = require('../function/token');
 const ourRating = require('../function/ourRatings');
 const weChatCtrl = require('../controller/weChatController');
-const UserController = require('../controller/UserController');
+console.log(20)
+const UserController = require('../controller/userController');
 const userAttentionToController = require('../controller/userAttentionToController');
 const commodityController = require('../controller/commodityController');
 const userToCollectController = require('../controller/userToCollectController');
