@@ -127,8 +127,9 @@ module.exports = {
             console.log(res[i]._doc.isCollect)
             console.log(res[i]._doc.isLike)
             console.log(res[i]._doc.imageUrl)
-            console.log(res[i]._doc.imgMaxHeight, '===!***==')
+            console.log(res[i]._doc.imgMaxHeight, '===!***==', res.length)
         }
+        console.log(res, '------')
         ctx.body = {
             code: 1,
             data: {
