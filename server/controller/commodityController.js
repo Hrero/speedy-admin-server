@@ -120,12 +120,14 @@ module.exports = {
         }
         let res = [...lookUp];
         for (let i=0; i< res.length; i++) {
-            console.log(Utils.getIsStatus(res[i], 'isCollect', ctx.state.userId), '===!==')
-            console.log(res[i]._doc.isCollect, '===!***==')
             res[i]._doc.isCollect = Utils.getIsStatus(res[i], 'isCollect', ctx.state.userId);
             res[i]._doc.isLike = Utils.getIsStatus(res[i], 'isLike', ctx.state.userId);
             res[i]._doc.imageUrl = await Utils.getArrForStr(res[i].imageUrl);
             res[i]._doc.imgMaxHeight = await Utils.getArrForStr(res[i].imgMaxHeight);
+            console.log(res[i]._doc.isCollect)
+            console.log(res[i]._doc.isLike)
+            console.log(res[i]._doc.imageUrl)
+            console.log(res[i]._doc.imgMaxHeight, '===!***==')
         }
         ctx.body = {
             code: 1,
