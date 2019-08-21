@@ -92,15 +92,12 @@ module.exports = {
     userDetail: async (ctx, next) => {
         let req = ctx.request.body;
         let userId = req.userId? req.userId: ctx.state.userId;
-        console.log(userId, '====')
         try {
+            console.log(User, '=!!doc__!!===')
             let data = await User.findOne({_id: userId});
-            console.log(data, '=!!doc__!!===')
             let message = await Remarks.find({status: 1, toUid: ctx.state.userId});
             data._doc.isFans = Utils.getIsStatus(data, 'isFans', ctx.state.userId);
             data._doc.message = message.length;
-            console.log(data, '=!!!!===')
-            console.log(message, '===^^^^=')
             ctx.body = {
                 code: 1,
                 data: data,
@@ -108,7 +105,6 @@ module.exports = {
             }
             await next()
         } catch (err) {
-            console.log(err, '=!!****!!===')
             ctx.body = {
                 code: err.code,
                 data: '',
