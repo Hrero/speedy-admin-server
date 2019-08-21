@@ -51,6 +51,7 @@ module.exports = {
          * keyword 关键词检索 传入检索productDes字段
          */
         let req = ctx.request.body;
+        console.log(req, '==!!!===')
         let school = decodeURI(ctx.request.header.cookie).match(/[\u4e00-\u9fa5]/g).join("");
         console.log(school, '==!!!===')
         let pageSize = parseInt(req.pageSize) || 20;
