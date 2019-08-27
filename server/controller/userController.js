@@ -3,6 +3,9 @@ const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
 const Remarks = require('../model/remarks');
+const Redis = require('../function/redis');
+let RabbitMQ = require('../function/mq');
+let mq = new RabbitMQ();
 module.exports = {
     saveUser: async (ctx, next) => {
         let req = ctx.request.body;
@@ -93,9 +96,12 @@ module.exports = {
         let userId = req.userId? req.userId: ctx.state.userId;
         try {
             let data = await User.findOne({_id: userId});
-            let message = await Remarks.find({status: 1, toUid: ctx.state.userId});
+            let message = await Remarks.find({status: 0, toUid: ctx.state.userId});
             data._doc.isFans = Utils.getIsStatus(data, 'isFans', ctx.state.userId);
             data._doc.message = message.length;
+            mq.sendQueueMsg('testQueue', 'my first message', (error) => {
+                console.log(error)
+            })
             ctx.body = {
                 code: 1,
                 data: data,

@@ -3,6 +3,8 @@ const User = require('../model/user');
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const Utils = require('../function/utils');
+let RabbitMQ = require('../function/mq');
+let mq = new RabbitMQ();
 module.exports = {
     addRemarks: async (ctx, next) => {
         let req = ctx.request.body;
@@ -138,6 +140,9 @@ module.exports = {
     },
     clearMessage: async (ctx, next) => {
         let req = ctx.request.body;
+        mq.receiveQueueMsg('testQueue',(msg) => {    
+            console.log(msg)
+        })
         try {
             let lookUp = await Remarks.updateMany({
                 toUid: ctx.state.userId

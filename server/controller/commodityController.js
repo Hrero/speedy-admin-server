@@ -124,12 +124,7 @@ module.exports = {
             res[i]._doc.isLike = Utils.getIsStatus(res[i], 'isLike', ctx.state.userId);
             res[i]._doc.imageUrl = await Utils.getArrForStr(res[i].imageUrl);
             res[i]._doc.imgMaxHeight = await Utils.getArrForStr(res[i].imgMaxHeight);
-            console.log(res[i]._doc.isCollect)
-            console.log(res[i]._doc.isLike)
-            console.log(res[i]._doc.imageUrl)
-            console.log(res[i]._doc.imgMaxHeight, '===!***==', res.length)
         }
-        console.log(res, '------')
         ctx.body = {
             code: 1,
             data: {
