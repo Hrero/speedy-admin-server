@@ -7,14 +7,14 @@
 const config = require('../config/server');
 const http = require("http");
 const app = require('../../app');
-const debug = require('debug')('demo:server');
+const debug = require('debug')('app');
 const webSocket = require('ws');
 const wsCallback = require('../../server/function/socket');
 
 /**
  * Get port from environment and store in Express.
  */
-
+debug('hello');
 var port = normalizePort(config.port);
 // app.set('port', port);
 
@@ -35,10 +35,7 @@ wss.on('connection', wsCallback);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port)
-if(config.environment === 'development'){
-    console.log('\x1B[32m 打开浏览器运行 127.0.0.1:'+ port +' , 愿你开心快乐每一天\x1b[37m');
-}
+server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -48,7 +45,6 @@ server.on('listening', onListening);
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
-
   if (isNaN(port)) {
     // named pipe
     return val;
@@ -99,5 +95,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  debug('\x1B[32m 打开浏览器运行 127.0.0.1:'+ addr.port +' , 愿你开心快乐每一天' + '\x1b[37m');
 }
