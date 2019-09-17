@@ -27,14 +27,17 @@ let server = http.createServer(app.callback()).listen(port);
  * Create WebSocket
  */
 if (config.evn === 'production') {
-    https.createServer({
+    let servers = https.createServer({
         key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
         cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
     }, app.callback()).listen(config.portHttps);
+    const wss = new webSocket.Server({servers});
+    wss.on('connection', wsCallback);
 }
-// const wss = new webSocket.Server({server});
+const wss = new webSocket.Server({server});
 
-// wss.on('connection', wsCallback);
+wss.on('connection', wsCallback);
+
 
 /**
  * Listen on provided port, on all network interfaces.
