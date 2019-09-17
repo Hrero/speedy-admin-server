@@ -29,7 +29,6 @@ const config = {
         },
         apiProxy: {
             javaServer: 'localhost',
-            // javaServer: 'https://server-test.zugeliang01.com',
             mockData: false,
             cache: false,
             cacheTime: 30 * 60 * 1000
@@ -42,7 +41,7 @@ const config = {
             cdnFile: 'https://static1.zugeliang01.com/'
         },
         apiProxy: {
-            javaServer: 'https://lmyear.com',
+            javaServer: '49.234.63.236',
             mockData: false,
             cache: false,
             cacheTime: 30 * 60 * 1000
