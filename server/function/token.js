@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const secret = 'token';
+const debug = require('debug')('app');
 
 module.exports = {
     encrypt: (payload, time) => {

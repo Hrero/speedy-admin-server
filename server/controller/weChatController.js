@@ -75,11 +75,12 @@ module.exports = {
                     openId: req.openId
                 }).save()
                 const token = Token.encrypt({id: user._id},'15d');
+                console.log(token, '=====')
                 let tokenUpdate = await User.update({_id: user._doc._id}, {token: token});
                 ctx.body = {
                     code: 1,
                     data: {
-                        token: tokenUpdate,
+                        token: token,
                         userId: user._doc._id
                     },
                     msg: '绑定成功'
