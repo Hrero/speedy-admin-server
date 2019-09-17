@@ -21,16 +21,17 @@ const port = normalizePort(config.port);
 /**
  * Create HTTP server.
  */
-let server = config.evn === 'development'? 
-    http.createServer(app.callback()).listen(port):
-    https.createServer({
-        key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
-        cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
-    }, app.callback()).listen(5449);
+let server = http.createServer(app.callback()).listen(port);
 // let server = http.createServer(app.callback()).listen(port);
 /**
  * Create WebSocket
  */
+if (config.evn === 'production') {
+    https.createServer({
+        key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
+        cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
+    }, app.callback()).listen(5449);
+}
 // const wss = new webSocket.Server({server});
 
 // wss.on('connection', wsCallback);
