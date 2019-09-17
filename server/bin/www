@@ -6,6 +6,8 @@
 
 const config = require('../config/server');
 const http = require("http");
+const https = require("https");
+const fs = require("fs");
 const app = require('../../app');
 const debug = require('debug')('app');
 const webSocket = require('ws');
@@ -14,16 +16,17 @@ const wsCallback = require('../../server/function/socket');
 /**
  * Get port from environment and store in Express.
  */
-debug('hello');
-var port = normalizePort(config.port);
-// app.set('port', port);
+const port = normalizePort(config.port);
 
 /**
  * Create HTTP server.
  */
-
-var server = http.createServer(app.callback());
-
+let server = config.evn === 'development'? 
+    http.createServer(app.callback()):
+    https.createServer({
+        key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
+        cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
+    }, app.callback()).listen(15449);
 /**
  * Create WebSocket
  */
