@@ -11,9 +11,9 @@ const cdnVersion = cjson.load(path.join(root, 'cdn.json')).version;
 let evn = process.env.NODE_ENV || 'development';
 
 //判断线上环境
+    console.log('==!!!!!!!!!!!!!=', network)
 for (let key in network) {
     const ip = network[key];
-    console.log('==!!!!!!!!!!!!!=', network)
     for (let i = 0; i < ip.length; i++) {
         if (productionList.indexOf(ip[i].address) > -1) {
             evn = 'production';
