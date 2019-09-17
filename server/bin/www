@@ -34,7 +34,7 @@ if (config.evn === 'production') {
         key: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.key')),
         cert: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.pem'))
     }, app.callback())
-    server.listen(8001);
+    server.listen(443);
     // const wss = new webSocket.Server({server});
     // wss.on('connection', wsCallback);
 } else {
