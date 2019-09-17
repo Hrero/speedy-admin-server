@@ -30,9 +30,9 @@ let server = config.evn === 'development'?
 /**
  * Create WebSocket
  */
-const wss = new webSocket.Server({server});
+// const wss = new webSocket.Server({server});
 
-wss.on('connection', wsCallback);
+// wss.on('connection', wsCallback);
 
 /**
  * Listen on provided port, on all network interfaces.
