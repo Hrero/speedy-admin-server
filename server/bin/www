@@ -30,6 +30,7 @@ let server = config.evn === 'development'?
 /**
  * Create WebSocket
  */
+console.log('======', config.evn)
 const wss = new webSocket.Server({server});
 
 wss.on('connection', wsCallback);

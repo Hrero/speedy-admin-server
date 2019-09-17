@@ -4,24 +4,21 @@ const os = require('os');
 const network = os.networkInterfaces();
 const cjson = require('cjson');
 
-const productionList = ['49.234.63.236'];
+const productionList = ['172.17.0.8'];
 const root = path.resolve(__dirname, '../..');
 const cdnVersion = cjson.load(path.join(root, 'cdn.json')).version;
 
 let evn = process.env.NODE_ENV || 'development';
 
 //判断线上环境
-    console.log('==!!!!!!!!!!!!!=', network)
 for (let key in network) {
     const ip = network[key];
     for (let i = 0; i < ip.length; i++) {
         if (productionList.indexOf(ip[i].address) > -1) {
             evn = 'production';
-            console.log(1)
         }
     }
 }
-console.log(2)
 
 const config = {
     development: {
