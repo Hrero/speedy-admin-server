@@ -16,9 +16,11 @@ for (let key in network) {
     for (let i = 0; i < ip.length; i++) {
         if (productionList.indexOf(ip[i].address) > -1) {
             evn = 'production';
+            console.log(1)
         }
     }
 }
+console.log(2)
 
 const config = {
     development: {
@@ -42,7 +44,7 @@ const config = {
             cdnFile: 'https://static1.zugeliang01.com/'
         },
         apiProxy: {
-            javaServer: 'http://49.234.63.236',
+            javaServer: 'https://lmyear.com',
             mockData: false,
             cache: false,
             cacheTime: 30 * 60 * 1000
@@ -50,6 +52,7 @@ const config = {
     }
 };
 
+console.log(evn, '=====')
 config[evn].evn = evn;
 config[evn].root = root;
 config[evn].port = 8000;
