@@ -27,8 +27,10 @@ const port = normalizePort(config.port);
  */
 if (config.evn === 'production') {
     let server = https.createServer({
-        key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
-        cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
+        // key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
+        // cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
+        key: fs.readFileSync('../../2696695_lmyear.com.key'),
+        cert: fs.readFileSync('../../2696695_lmyear.com.pem')
     }, app.callback()).listen(config.portHttps);
     // const wss = new webSocket.Server({server});
     
