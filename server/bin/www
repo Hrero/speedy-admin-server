@@ -27,7 +27,7 @@ const port = normalizePort(config.port);
 //         key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
 //         cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
 //     }, app.callback()).listen(5449);
-let server = http.createServer(app.callback());
+let server = http.createServer(app.callback()).listen(port);
 /**
  * Create WebSocket
  */
@@ -39,7 +39,7 @@ let server = http.createServer(app.callback());
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port)
+// server
 server.on('error', onError);
 server.on('listening', onListening);
 
