@@ -13,6 +13,7 @@ let evn = process.env.NODE_ENV || 'development';
 //判断线上环境
 for (let key in network) {
     const ip = network[key];
+    console.log(ip, '==!!!!!!!!!!!!!=')
     for (let i = 0; i < ip.length; i++) {
         if (productionList.indexOf(ip[i].address) > -1) {
             evn = 'production';
@@ -52,7 +53,6 @@ const config = {
     }
 };
 
-console.log(evn, '=====')
 config[evn].evn = evn;
 config[evn].root = root;
 config[evn].port = 8000;
