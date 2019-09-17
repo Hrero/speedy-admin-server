@@ -50,6 +50,7 @@ routerApi.post('/api/user/getRemarksList', token.auth, remarksController.getRema
 routerApi.post('/api/user/getMessageList', token.auth, remarksController.getMessageList); // 该用户的评论消息
 routerApi.post('/api/user/updateMessage', token.auth, remarksController.updateMessage); // 更新0未读消息找机会封装一个公用的更新字段的方法
 routerApi.post('/api/user/clearMessage', token.auth, remarksController.clearMessage); // 清空未读消息
+routerApi.post('/api/user/getMessageNum', token.auth, remarksController.getMessageNum); // 消息请求推送
 
 
 // 微信&登录

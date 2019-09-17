@@ -163,5 +163,25 @@ module.exports = {
             }
             return;
         }
-    }
+    },
+    getMessageNum: async (ctx, next) => {
+        let req = ctx.request.body;
+        try {
+            const data = await Remarks.find({status: 0, toUid: ctx.state.userId});
+            const length = data.length;
+            ctx.body = {
+                code: 1,
+                data: length,
+                msg: 'success'
+            }
+        }
+        catch(err) {
+            ctx.body = {
+                code: err.code,
+                data: '',
+                msg: err.errmsg
+            }
+            return;
+        }
+    },
 }

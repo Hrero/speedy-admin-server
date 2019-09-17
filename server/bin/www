@@ -26,23 +26,24 @@ const port = normalizePort(config.port);
 /**
  * Create WebSocket
  */
-let server = ''
-if (config.evn === 'production') {
-    server = https.createServer({
-        // key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
-        // cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
-        key: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.key')),
-        cert: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.pem'))
-    }, app.callback())
-    server.listen(8001);
-    const wss = new webSocket.Server({server});
-    wss.on('connection', wsCallback);
-} else {
-    server = http.createServer(app.callback()).listen(port);
-    const wss = new webSocket.Server({server});
+// let server = ''
+// if (config.evn === 'production') {
+//     server = https.createServer({
+//         // key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
+//         // cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
+//         key: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.key')),
+//         cert: fs.readFileSync(path.resolve(__dirname, '../../2696695_lmyear.com.pem'))
+//     }, app.callback())
+//     server.listen(8001);
+//     const wss = new webSocket.Server({server});
+//     wss.on('connection', wsCallback);
+// } else {
+//     server = http.createServer(app.callback()).listen(port);
+//     const wss = new webSocket.Server({server});
     
-    wss.on('connection', wsCallback);
-}
+//     wss.on('connection', wsCallback);
+// }
+let server = http.createServer(app.callback())
 
 
 /**
@@ -50,6 +51,7 @@ if (config.evn === 'production') {
  */
 
 // server
+server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
