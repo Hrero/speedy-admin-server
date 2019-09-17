@@ -31,8 +31,8 @@ if (config.evn === 'production') {
         key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
         cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
     }, app.callback()).listen(config.portHttps);
-    const wss = new webSocket.Server({servers});
-    wss.on('connection', wsCallback);
+    // const wss = new webSocket.Server({servers});
+    // wss.on('connection', wsCallback);
 }
 const wss = new webSocket.Server({server});
 
