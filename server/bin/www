@@ -22,7 +22,7 @@ const port = normalizePort(config.port);
  * Create HTTP server.
  */
 let server = config.evn === 'development'? 
-    http.createServer(app.callback()):
+    http.createServer(app.callback()).listen(port):
     https.createServer({
         key: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.key'),
         cert: fs.readFileSync('/usr/local/nginx/conf/cert/2696695_lmyear.com.pem')
@@ -30,7 +30,6 @@ let server = config.evn === 'development'?
 /**
  * Create WebSocket
  */
-console.log('======', config.evn)
 const wss = new webSocket.Server({server});
 
 wss.on('connection', wsCallback);
@@ -39,7 +38,7 @@ wss.on('connection', wsCallback);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+
 server.on('error', onError);
 server.on('listening', onListening);
 
