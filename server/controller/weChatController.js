@@ -70,12 +70,12 @@ module.exports = {
             }
             let isUser = await User.find({openId: req.openId});
             if (isUser.length === 0) {
-                console.log(isUser, req.openId, '===isUser[0]._id===')
+                userNum = isUser.length + 1;
                 let user = await new User({
                     openId: req.openId,
-                    studentNumber: 0,
-                    phoneNumber: 0,
-                    nickName: ''
+                    studentNumber: userNum,
+                    phoneNumber: userNum,
+                    nickName: null
                 }).save()
                 const token = Token.encrypt({id: user._id},'15d');
                 let tokenUpdate = await User.update({_id: user._doc._id}, {token: token});
