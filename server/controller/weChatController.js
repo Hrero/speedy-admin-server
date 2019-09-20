@@ -69,8 +69,9 @@ module.exports = {
                 }
             }
             let isUser = await User.find({openId: req.openId});
+            let userNumAll = await User.find({});
             if (isUser.length === 0) {
-                userNum = isUser.length + 1;
+                userNum = userNumAll.length + 1;
                 let user = await new User({
                     openId: req.openId,
                     studentNumber: userNum,
