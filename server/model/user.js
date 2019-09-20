@@ -15,17 +15,17 @@ const Schema = mongoose.Schema;
             type: String
         },
         studentNumber: { // 用户真实学生证号码
-            type: Number,
-            unique: true
+            type: Number
+            // unique: true
         },
         phoneNumber: { // 用户真实电话号码
             type: Number
         },
         nickName: { // 用户昵称
-            type: String,
+            type: String
         },
         avatarUrl: { // 用户头像
-            type: String,
+            type: String
         },
         sex: { // 用户性别 1 男 0 女
             type: Number,
